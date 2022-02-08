@@ -1,0 +1,21 @@
+//write a program for Addition of three numbers in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter three no:");
+        Scanner s=new Scanner(System.in);
+        double a=s.nextDouble();
+        double b=s.nextDouble();
+        double c=s.nextDouble();
+
+        double d=a+b+c;
+
+        System.out.println("Addition is:"+d);
+    }
+}
