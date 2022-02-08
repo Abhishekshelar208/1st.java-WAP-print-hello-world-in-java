@@ -1,0 +1,49 @@
+//write a program to make calculator using switch statement in java.
+//Coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter Any two no:");
+        Scanner s=new Scanner(System.in);
+
+        float a=s.nextFloat();
+        float b=s.nextFloat();
+
+        System.out.println("1. Addition");
+        System.out.println("2. Substraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+
+        System.out.println("Enter your choice:");
+        int ch=s.nextInt();
+
+
+
+        switch(ch)
+        {
+            case 1: float add=a+b;
+                System.out.println("Addition is:"+add);
+                break;
+
+            case 2: float sub=a-b;
+                System.out.println("Substraction is:"+sub);
+                break;
+
+            case 3: float mul=a*b;
+                System.out.println("Multiplication is:"+mul);
+                break;
+
+            case 4: float div=a/b;
+                System.out.println("Division is:"+div);
+                break;
+
+            default:
+                System.out.println("Invalid input");
+        }
+    }
+}
