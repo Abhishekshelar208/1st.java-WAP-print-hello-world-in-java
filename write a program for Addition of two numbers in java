@@ -1,0 +1,20 @@
+//write a program for Addition of two numbers in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter two no:");
+        Scanner s=new Scanner(System.in);
+        double a=s.nextDouble();
+        double b=s.nextDouble();
+
+        double c=a+b;
+
+        System.out.println("Addition is:"+c);
+    }
+}
