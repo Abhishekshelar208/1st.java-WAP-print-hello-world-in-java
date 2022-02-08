@@ -1,0 +1,11 @@
+//Writer a program for print "Hello world" in java coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Hello world");
+    }
+}
+
