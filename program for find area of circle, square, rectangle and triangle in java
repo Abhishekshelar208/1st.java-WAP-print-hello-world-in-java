@@ -1,0 +1,47 @@
+//write a program for find area of circle, square, rectangle and triangle in java
+//Coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+
+        System.out.println("Enter Radius for find Area of circle:");
+
+        float r=s.nextFloat();
+        double pi=3.14;
+
+        double areaofcir=pi*r*r;
+
+        System.out.println("Enter length of your rectangle:");
+        float l=s.nextFloat();
+        System.out.println("Enter breadth of your rectangle:");
+        float b=s.nextFloat();
+
+        float areaofrect=(b*l);
+
+        System.out.println("Enter base of your triangle:");
+        double base=s.nextDouble();
+
+        System.out.println("Enter vertical height of your triangle");
+        double verheight=s.nextDouble();
+
+        double areaoftri=(base*verheight)/2;
+
+        System.out.println("Enter Side of your square:");
+        float side=s.nextFloat();
+
+        float areaofsq=side*side;
+
+        System.out.println();
+
+        System.out.println("Area of Rectangle is:"+areaofrect);
+        System.out.println("Area of circle is:"+areaofcir);
+        System.out.println("Area of square is:"+areaofsq);
+        System.out.println("Area of triangle is:"+areaoftri);
+    }
+}
