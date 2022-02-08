@@ -1,0 +1,60 @@
+//write a program for calculate percentage of 6 subject marks (out of 100) also get the details from the user like:
+//Name, roll no, SP, BK, ECO, OCM, ENG, MAR;
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter your Name:");
+        Scanner s=new Scanner(System.in);
+        String name=s.next();
+
+        System.out.println("Enter your Roll No:");
+        int roll=s.nextInt();
+
+        System.out.println("Enter your SP marks:");
+        int sp=s.nextInt();
+
+        System.out.println("Enter your BK marks:");
+        int bk=s.nextInt();
+
+        System.out.println("Enter your ECO marks:");
+        int eco=s.nextInt();
+
+        System.out.println("Enter your OCM marks:");
+        int ocm=s.nextInt();
+
+        System.out.println("Enter your ENG marks:");
+        int eng=s.nextInt();
+
+        System.out.println("Enter your MAR marks:");
+        int mar=s.nextInt();
+
+
+
+        System.out.println("Student Details :");
+        System.out.println();
+        System.out.println("Name: "+name);
+        System.out.println("Roll No: "+roll);
+        System.out.println();
+        System.out.println("SP Marks: "+sp);
+        System.out.println("BK Marks: "+bk);
+        System.out.println("ECO Marks: "+eco);
+        System.out.println("OCM Marks: "+ocm);
+        System.out.println("ENG Marks: "+eng);
+        System.out.println("MAR Marks: "+mar);
+        System.out.println();
+
+        float total=(sp+bk+eco+ocm+eng+mar);
+        float percentage=(total/600)*100;
+
+
+        System.out.println("All subjects marks Total is: "+total);
+        System.out.println();
+        System.out.println("Percentage :"+percentage);
+    }
+}
