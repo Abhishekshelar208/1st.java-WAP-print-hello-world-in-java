@@ -1,0 +1,26 @@
+//write a program for calculate simple interest in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter principle amount");
+        Scanner s=new Scanner(System.in);
+        float p=s.nextFloat();
+
+        System.out.println("Enter rate of interest:");
+        float r=s.nextFloat();
+
+        System.out.println("Enter Time (in year):");
+        float t=s.nextFloat();
+
+        float si = (p*r*t)/100;
+
+        System.out.println("Simple Interest is:"+si);
+
+    }
+}
