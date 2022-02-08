@@ -1,0 +1,36 @@
+//write a program for find greater number between Four numbers in java
+//Coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any Four numbers:");
+        float a=s.nextFloat();
+        float b=s.nextFloat();
+        float c=s.nextFloat();
+        float d=s.nextFloat();
+
+        if(a>b && a>c && a>d)
+        {
+            System.out.println("Greater number is:"+a);
+        }
+        else if(b>a && b>c && b>d)
+        {
+            System.out.println("Greater number is:"+b);
+        }
+        else if(c>a && c>b && c>d)
+        {
+            System.out.println("Greater number is:"+c);
+        }
+        else if(d>a && d>b && d>c)
+        {
+            System.out.println("Greater number is:"+d);
+        }
+
+    }
+}
