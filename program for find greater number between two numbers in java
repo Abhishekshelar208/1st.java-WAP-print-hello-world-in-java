@@ -1,0 +1,26 @@
+//write a program for find greater number between two numbers in java
+//Coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any Two numbers:");
+        float a=s.nextFloat();
+        float b=s.nextFloat();
+
+        if(a>b)
+        {
+            System.out.println("Greater number is:"+a);
+        }
+        else
+        {
+            System.out.println("Greater number is:"+b);
+        }
+
+    }
+}
