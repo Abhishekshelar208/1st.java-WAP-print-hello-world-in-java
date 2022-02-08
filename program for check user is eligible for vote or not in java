@@ -1,0 +1,24 @@
+//write a program for check user is eligible for vote or not in java
+//Coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter your age :");
+        int age=s.nextInt();
+
+        if(age>=18)
+        {
+            System.out.print("You are Eligible for vote");
+        }
+        else
+        {
+            System.out.print("You are not Eligible for vote");
+        }
+    }
+}
