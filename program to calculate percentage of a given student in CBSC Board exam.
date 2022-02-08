@@ -1,0 +1,48 @@
+/*write a program to calculate percentage of a given student in CBSC Board exam. his marks from 5 subjects must
+  be taken as input from the keyboard. ( marks are out off 100).
+        Coded By Abhishek D. Shelar 😊
+        Diploma(IT) 2nd year student
+        */
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+
+        float total=500;
+        Scanner s=new Scanner(System.in);
+
+        System.out.println("enter your marks according to list");
+
+        System.out.println("Enter maths marks:");
+
+        System.out.println("Enter Science marks");
+
+        System.out.println("Enter English marks");
+
+        System.out.println("Enter Economics marks");
+
+        System.out.println("Enter social science marks");
+
+        int maths=s.nextInt();
+
+        int science=s.nextInt();
+
+        int english=s.nextInt();
+
+        int economics=s.nextInt();
+
+        int social=s.nextInt();
+
+        int sum=maths+science+english+economics+social;
+
+       float percentage = (sum/total)*100;
+
+        System.out.println("Your final percentage is: ");
+
+        System.out.println(percentage);
+    }
+}
