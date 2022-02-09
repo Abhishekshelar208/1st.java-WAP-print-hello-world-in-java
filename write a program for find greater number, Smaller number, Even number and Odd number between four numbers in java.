@@ -1,0 +1,92 @@
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any Four numbers:");
+        float a=s.nextFloat();
+        float b=s.nextFloat();
+        float c=s.nextFloat();
+        float d=s.nextFloat();
+
+        if(a>b && a>c && a>d)
+        {
+            System.out.println("Greater number is:"+a);
+        }
+        else if(b>a && b>c && b>d)
+        {
+            System.out.println("Greater number is:"+b);
+        }
+        else if(c>a && c>b && c>d)
+        {
+            System.out.println("Greater number is:"+c);
+        }
+        else if(d>a && d>b && d>c)
+        {
+            System.out.println("Greater number is:"+d);
+        }
+
+        System.out.println();
+
+
+
+        if(a<b && a<c && a<d)
+        {
+            System.out.println("Smaller number is:"+a);
+        }
+        else if(b<a && b<c && b<d)
+        {
+            System.out.println("Smaller number is:"+b);
+        }
+        else if(c<a && c<b && c<d)
+        {
+            System.out.println("Smaller number is:"+c);
+        }
+        else if(d<a && d<b && d<c)
+        {
+            System.out.println("Smaller number is:"+d);
+        }
+
+        System.out.println();
+
+        if(a%2==0)
+        {
+            System.out.println("Even Numbers :"+a);
+        }
+        if(b%2==0)
+        {
+            System.out.println("Even Numbers :"+b);
+        }
+        if(c%2==0)
+        {
+            System.out.println("Even Numbers :"+c);
+        }
+        if(d%2==0)
+        {
+            System.out.println("Even Numbers :"+d);
+        }
+
+        System.out.println();
+
+        if(a%2!=0)
+        {
+            System.out.println("Odd Numbers :"+a);
+        }
+        if(b%2!=0)
+        {
+            System.out.println("Odd Numbers :"+b);
+        }
+        if(c%2!=0)
+        {
+            System.out.println("Odd Numbers :"+c);
+        }
+        if(d%2!=0)
+        {
+            System.out.println("Odd Numbers :"+d);
+        }
+
+    }
+}
