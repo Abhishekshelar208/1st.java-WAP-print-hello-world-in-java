@@ -1,0 +1,22 @@
+//write a program to covert entered case to lowercase in java.
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+       //String name=new String("This is AN UppEr case String");
+        String n=new String();
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any String:");
+        String name=s.nextLine();
+
+        System.out.println(name.toLowerCase(Locale.ROOT));
+
+        System.out.println("Converted String :"+name);
+    }
+}
