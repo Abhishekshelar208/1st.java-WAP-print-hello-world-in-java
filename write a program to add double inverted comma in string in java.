@@ -1,0 +1,12 @@
+//write a program to add double inverted comma in string in java.
+//Coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("\"Abhishek nice to meet you!\"");
+    }
+}
