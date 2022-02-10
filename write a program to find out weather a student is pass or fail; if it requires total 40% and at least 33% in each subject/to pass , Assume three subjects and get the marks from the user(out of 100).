@@ -1,0 +1,35 @@
+//write a program to find out weather a student is pass or fail; if it requires total 40% and at least 33% in each subject 
+//to pass , Assume three subjects and get the marks from the user(out of 100).
+//Coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+     Scanner s=new Scanner(System.in);
+        System.out.println("Enter your 1st subject marks:");
+        byte s1=s.nextByte();
+
+        System.out.println("Enter your 2st subject marks:");
+        byte s2=s.nextByte();
+
+        System.out.println("Enter your 3st subject marks:");
+        byte s3=s.nextByte();
+
+        float total=(s1+s2+s3)/3.0f;
+
+        if(total>=40 && s1>33 && s2>33 && s3>33 )
+        {
+            System.out.println("You are pass");
+        }
+        else
+        {
+            System.out.println("You are fail");
+        }
+
+        System.out.println("Percentage:"+total);
+    }
+}
