@@ -1,0 +1,63 @@
+//write a program to make Stone, paper or scissors game in between user and computer in java.
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Random;
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter your move : rock, paper or scissors");
+        String mymove=s.nextLine();
+
+        if(!mymove.equalsIgnoreCase("rock") && !mymove.equalsIgnoreCase("paper") && !mymove.equalsIgnoreCase("scissors")){
+            System.out.println("your move isn't valid ");
+        }else
+        {
+            int ran=(int)(Math.random() * 3);
+            String opponentmove="";
+            if(ran==0){
+                opponentmove="rock";
+            }
+            else if(ran==1){
+                opponentmove="Paper";
+            }
+            else{
+                opponentmove="Scissors";
+            }
+            System.out.println("opponent move is:"+opponentmove);
+
+            if(mymove.equalsIgnoreCase(opponentmove)){
+                System.out.println("You are tied!");
+            }
+            else if(mymove.equalsIgnoreCase("rock") && opponentmove.equalsIgnoreCase("paper"))
+            {
+                System.out.println("You loss , Oppoent wins");
+            }
+            else if(mymove.equalsIgnoreCase("rock") && opponentmove.equalsIgnoreCase("scissors"))
+            {
+                System.out.println("You win , Oppoent loss");
+            }
+            else if(mymove.equalsIgnoreCase("paper") && opponentmove.equalsIgnoreCase("scissors"))
+            {
+                System.out.println("You loss , Oppoent win");
+            }
+            else if(mymove.equalsIgnoreCase("paper") && opponentmove.equalsIgnoreCase("rock"))
+            {
+                System.out.println("You win , Oppoent loss");
+            }
+            else if(mymove.equalsIgnoreCase("scissors") && opponentmove.equalsIgnoreCase("paper"))
+            {
+                System.out.println("You win , Oppoent loss");
+            }
+            else if(mymove.equalsIgnoreCase("scissors") && opponentmove.equalsIgnoreCase("rock"))
+            {
+                System.out.println("You loss , Oppoent win");
+            }
+
+        }
+    }
+        }
