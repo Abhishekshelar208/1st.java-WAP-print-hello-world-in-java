@@ -1,0 +1,34 @@
+//write a program to find out the type of website from the url;
+//.com for commercial website
+//.org for organization website
+//.in for Indian website
+//coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+          Scanner s=new Scanner(System.in);
+          String name=s.next();
+
+         if(name.endsWith(".com"))
+         {
+             System.out.println("This is commercial website");
+         }
+         else if(name.endsWith(".org"))
+         {
+             System.out.println("This is organization website");
+         }
+         else if(name.endsWith(".in"))
+         {
+             System.out.println("This is Indian website");
+         }else {
+             System.out.println("invalid input");
+         }
+
+
+    }
+}
