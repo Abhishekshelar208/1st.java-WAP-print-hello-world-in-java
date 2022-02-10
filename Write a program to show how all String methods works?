@@ -1,0 +1,32 @@
+//chapter 3: Write a program to show how all String methods works?
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import com.sun.security.jgss.GSSUtil;
+
+import java.util.Locale;
+
+class Main
+{
+    public static void main(String[] args) {
+        String name=new String("Abhishek Dadasaheb Shelar");
+        System.out.println(name.length());
+        System.out.println(name.toLowerCase(Locale.ROOT));
+        System.out.println(name.toUpperCase(Locale.ROOT));
+        System.out.println(name.trim());
+        System.out.println(name.substring(3));
+        System.out.println(name.substring(4,13));
+        System.out.println(name.replace('s','z'));
+        System.out.println(name.startsWith("A"));
+        System.out.println(name.endsWith("r"));
+        System.out.println(name.charAt(3));
+        System.out.println(name.indexOf("i"));
+        System.out.println(name.indexOf("s",5));
+        System.out.println(name.lastIndexOf("i"));
+        System.out.println(name.equals("Abhishek Dadasaheb Shelar"));
+        System.out.println(name.equalsIgnoreCase("abhIsheK DaDaSaHeb ShElAr"));
+        System.out.println("hello my name is \'Abhishek shelar\'  and\t i am very happy\n with my \"family and life\"");
+
+    }
+}
