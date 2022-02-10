@@ -1,0 +1,35 @@
+//write a program to calculate income tax paid by an employee to the government as per the sales mentioned below:
+//       Income tax     Tax
+//       2.5L to 5.0L   5%
+//       5.0L to 10.0L   20%
+//       10.0L to above  30%
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter your Income Tax(in lakhs):");
+        float in=s.nextFloat();
+
+        if(in>=2.5 && in<=5.0){
+            System.out.println("You have to pay 5% of tax:");
+        }
+        else if(in>=5.0 && in<=10.0)
+        {
+            System.out.println("You have to pay 20% of tax:");
+        }
+        else if(in>10.0)
+        {
+            System.out.println("You have to pay 30% of tax:");
+        }
+        else
+        {
+            System.out.println("You dont have to pay tax");
+        }
+    }
+}
