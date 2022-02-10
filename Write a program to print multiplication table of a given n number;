@@ -1,0 +1,13 @@
+//write a program to print multiplication table of a given n number;
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main {
+    public static void main(String[] args) {
+        int n=8;
+        for(int i=1; i<=10; i++){
+            System.out.printf("\n%d X %d = %d", n,i,n*i);
+        }
+    }
+}
