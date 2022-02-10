@@ -1,0 +1,23 @@
+//write a program to print this pattern in java:    
+//*  *  *  *  *  
+//*  *  *  *  
+//*  *  *  
+//*  *  
+//*
+//coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        int i,j;
+       for(i=5; i>=0; i--){
+           for (j=0; j<=i; j++){
+               System.out.print("*  " );
+           }
+           System.out.println();
+       }
+    }
+}
