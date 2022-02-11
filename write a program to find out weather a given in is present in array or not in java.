@@ -1,0 +1,31 @@
+//write a program to find out weather a given in is present in array or not in java.
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter value to match :");
+        int num=s.nextInt();
+
+        int marks[]={1,2,3,4,5};
+        boolean isAnArray = false;
+        for(int element : marks){
+            if(num==element){
+                isAnArray=true;
+                break;
+            }
+        }
+        if(isAnArray){
+            System.out.println("Value is present in array");
+        }
+        else
+        {
+            System.out.println("Value is not present in array");
+        }
+    }
+}
