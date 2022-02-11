@@ -1,0 +1,15 @@
+//write a program to create an Array of 5 floats and calculate their sum in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+        float arr[]={1.1f, 2.3f, 4.5f, 5.4f,6.4f,7.7f,8.77f};
+        float sum = 0;
+        for (float element:arr){
+            sum=sum+element;
+        }
+        System.out.println(sum);
+    }
+}
