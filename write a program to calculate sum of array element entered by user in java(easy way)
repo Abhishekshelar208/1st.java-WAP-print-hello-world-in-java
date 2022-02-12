@@ -1,0 +1,32 @@
+//write a program to calculate sum of array element entered by user in java(easy way)
+//coded By Abhishek Dadasaheb Shelar.
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int sum=0;
+        System.out.println("Enter size of your array:");
+        int size=s.nextInt();
+        int arr[]= new int[size];
+
+        System.out.println("Enter elements in array according to your size:");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]=s.nextInt();
+        }
+
+        System.out.println("your array elements are:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+
+        System.out.println("Calculating sum.....");
+        for (int element: arr){
+            sum=sum+element;
+        }
+        System.out.println("Sum is: "+ sum);
+
+    }
+}
