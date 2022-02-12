@@ -1,0 +1,32 @@
+//write a program to get values from the user in array and sort them and display to the user in java
+//Coded By Abhishek Dadasaheb Shelar.
+package com.company;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the size of your array:");
+        int size=s.nextInt();
+
+        int arr[]=new int[size];
+
+        System.out.println("Enter values in your array according your entered size:");
+        for (int i = 0; i < size; i++) {
+            arr[i]=s.nextInt();
+        }
+
+        System.out.println("your array elements are:");
+        for(int element: arr){
+            System.out.print(element+" ");
+        }
+
+        System.out.println("After sorting array elements are:");
+        Arrays.sort(arr);
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
