@@ -1,0 +1,44 @@
+//write a program to find entered number is present in array or not in java(easy way)
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int count=0;
+        System.out.println("Enter size of array:");
+        int size=s.nextInt();
+        int arr[]=new int[size];
+
+        System.out.println("Enter elements in array according your size:");
+        for (int i = 0; i < arr.length ; i++) {
+            arr[i]=s.nextInt();
+        }
+
+
+
+        System.out.println("Your array elements are:");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println("Enter search element:");
+        int search=s.nextInt();
+        System.out.println("Searching your element in our array....");
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]==search){
+                count++;
+            }
+        }
+        if(count>0){
+            System.out.println("Your entered element present in array");
+        }else{
+            System.out.println("Your entered element not present in array");
+        }
+
+
+
+    }
+}
