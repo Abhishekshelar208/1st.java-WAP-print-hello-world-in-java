@@ -1,0 +1,25 @@
+//write a java method to print multiplication table for n in java
+//coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.io.FilterOutputStream;
+import java.util.Scanner;
+
+class Main{
+    static int multi(int x){
+int num=x;
+
+        for (int i = 1; i <=9 ; i++) {
+            System.out.println(i*num);
+        }
+        return x*10;
+
+
+   }
+
+    public static void main(String[] args) {
+        System.out.println(multi(9));
+
+    }
+}
