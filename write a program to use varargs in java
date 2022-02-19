@@ -1,0 +1,23 @@
+//write a program to use varargs in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+
+    static int sum(int ...arr){
+        int result=0;
+        for(int element: arr){
+            result+=element;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+
+        System.out.println("Addition of 4 and 5 is:"+sum(4,5));
+        System.out.println("Addition of 4, 5 and 5 is:"+sum(4,5,5));
+        System.out.println("Addition of 4,7, 5 and 5 is:"+sum(4,7,5,5));
+        System.out.println("Addition of 4, 5 and 5 is:"+sum(4,5,8,8,8,5));
+    }
+
+}
