@@ -1,0 +1,49 @@
+//write a program to perform all the Arithmetic operations in java.
+//coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter two number:");
+        int a = s.nextInt();
+        int b = s.nextInt();
+
+        System.out.println("1 for addition:");
+        System.out.println("2 for subtraction:");
+        System.out.println("3 for multiplication:");
+        System.out.println("4 for Division:");
+        System.out.println("5 for Modulus:");
+
+        System.out.println("Enter choice :");
+        int ch = s.nextInt();
+
+        switch (ch) {
+            case 1:
+                System.out.println("Addition is:" + (a + b));
+                break;
+
+            case 2:
+                System.out.println("Subtraction is:" + (a - b));
+                break;
+
+            case 3:
+                System.out.println("Multiplication is:" + (a * b));
+                break;
+
+            case 4:
+                System.out.println("Division is:" + (a / b));
+                break;
+
+            case 5:
+                System.out.println("Modulus is:" + (a % b));
+                break;
+
+            default:
+                System.out.println("Invalid input");
+        }
+    }
+}
