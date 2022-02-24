@@ -1,0 +1,17 @@
+//write a program which prints the even number between (0 to 100) in an increasing order.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        System.out.println("Printing all even numbers between 0 to 100........");
+        for (int i = 2; i <=100; i++) {
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
+    }
+}
