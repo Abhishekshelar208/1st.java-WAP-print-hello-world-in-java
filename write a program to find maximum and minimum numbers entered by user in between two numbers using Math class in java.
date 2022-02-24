@@ -1,0 +1,19 @@
+//write a program to find maximum and minimum numbers entered by user in between two numbers using Math class in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter two number:");
+        int a=s.nextInt();
+        int b=s.nextInt();
+
+        System.out.println("Maximum number is:"+ Math.max(a,b));
+        System.out.println();
+        System.out.println("Minimum number is:"+ Math.min(a,b));
+    }
+}
