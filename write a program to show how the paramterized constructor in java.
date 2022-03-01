@@ -1,0 +1,33 @@
+//write a program to show how the paramterized constructor in java.
+
+//coded BY Abhishek Dadasaheb Shelar.
+
+
+
+package com.company;
+
+
+
+class Main{
+
+    Main(int a, String c){
+
+        int id=a;
+
+        String name=c;
+
+        System.out.println("Id is :"+ id);
+
+        System.out.println("name is: "+name);
+
+    }
+
+
+
+    public static void main(String[] args) {
+
+        Main s=new Main(23,"Abhishek");
+
+    }
+
+}
