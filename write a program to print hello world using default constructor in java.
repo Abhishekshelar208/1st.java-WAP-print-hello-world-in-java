@@ -1,0 +1,27 @@
+ //write a program to print hello world using default constructor in java.
+
+//coded BY Abhishek Dadasaheb Shelar.
+
+
+
+package com.company;
+
+
+
+class Main{
+
+    Main() {
+
+        System.out.println("Hello world");
+
+        System.out.println("This is an default constructor");
+
+    }
+
+    public static void main(String[] args) {
+
+        Main s=new Main();
+
+    }
+
+}
