@@ -1,0 +1,50 @@
+//write a program to make calculator using parameterized constructor in java.
+// coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+
+   Main(int x,int y,int choice){
+       int a=x;
+       int b=y;
+       int ch=choice;
+       int sum,div,mul,sub;
+
+
+       switch(choice){
+           case 1: sum=a+b;
+               System.out.println("Addition is:"+ sum);
+           break;
+
+           case 2: sub=a-b;
+               System.out.println("Subtraction is:"+ sub);
+               break;
+
+           case 3: mul=a*b;
+               System.out.println("Multiplication is:"+ mul);
+               break;
+
+           case 4: div=a/b;
+               System.out.println("Division is:"+ div);
+               break;
+
+           default:
+               System.out.println("Invalid input");
+       }
+
+   }
+
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number:");
+        int a= sc.nextByte();
+        int b= sc.nextByte();
+        System.out.println("ENTER YOUR CHOICE:");
+        int ch=sc.nextInt();
+        Main s=new Main(a,b,ch);
+    }
+}
