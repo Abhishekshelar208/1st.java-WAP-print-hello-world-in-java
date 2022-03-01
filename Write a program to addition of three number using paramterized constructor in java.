@@ -1,0 +1,23 @@
+//Write a program to addition of three number using paramterized constructor in java.
+//given input in runtime.
+//coded By Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    Main(int x,int y,int z){
+        int a=x;
+        int b=y;
+        int c=z;
+        int sum=a+b+c;
+        System.out.println("Addition of three numbers is :"+sum);
+
+    }
+
+    public static void main(String[] args) {
+        Main s=new Main(4,5,6);
+
+    }
+}
