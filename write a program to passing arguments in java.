@@ -1,0 +1,21 @@
+//write a program to passing arguments in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+    void fun(int a,int b){
+        a=a+5;
+        b=b+5;
+
+    }
+    public static void main(String[] args) {
+        Main s=new Main();
+        int a=10, b=20;
+        System.out.println("the value of a and b before funtion call is:"+a+" "+b);
+
+        s.fun(a,b);
+        System.out.println("The value of a and b after funtion is:"+ a+" "+b);
+
+    }
+}
