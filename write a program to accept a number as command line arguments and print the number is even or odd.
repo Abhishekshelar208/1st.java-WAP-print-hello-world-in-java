@@ -1,0 +1,23 @@
+//write a program to accept a number as command line arguments and print the number is even or odd.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+
+        System.out.println("Enter any number:");
+        int num=s.nextInt();
+
+        if(num%2==0){
+            System.out.println("This is even number:"+ num);
+        }
+        else
+        {
+            System.out.println("This is odd number:"+ num);
+        }
+    }
+}
