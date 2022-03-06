@@ -1,0 +1,21 @@
+//write a program to create a class cellphone with methods to print ringing, vibrating and etc in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Cellphone{
+    public void ringing(){
+        System.out.println("Phone is Ringing........");
+    }
+    public void vibrating(){
+        System.out.println("Phone is vibrating........");
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        Cellphone s=new Cellphone();
+        s.ringing();
+        s.vibrating();
+    }
+}
