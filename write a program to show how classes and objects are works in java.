@@ -1,0 +1,27 @@
+//write a program to show how classes and objects are works in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class EMP{                     //custom class which name is EMP
+    int id;
+    String name;
+    public void getdetails(){       //method for printing id and name.
+        System.out.println("Id is:"+id);
+        System.out.println("Name is:"+name);
+    }
+}
+public class Main{                      //Main class .
+    public static void main(String[] args) {            //Main method.
+        System.out.println("This is main class:");
+        EMP abhi=new EMP();             //object creating for custom class.
+        abhi.id=12;                     //giving the value for id for person 1
+        abhi.name="Abhishek Shelar";    //giving the value for name for person 1
+        abhi.id=23;                     //giving the value for id for person 2
+        abhi.name="Vedant Shelar";      //giving the value for name for person 2
+
+        abhi.getdetails();              //calling the method to print details for person 1
+        abhi.getdetails();              //calling the method to print details for person 2.
+
+    }
+}
