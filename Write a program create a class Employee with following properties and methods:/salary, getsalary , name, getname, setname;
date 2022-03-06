@@ -1,0 +1,33 @@
+//Write a program create a class Employee with following properties and methods:
+//salary, getsalary , name, getname, setname;
+
+package com.company;
+
+class Employee{
+    int salary;
+    String name;
+
+    public void getsalary(){
+        System.out.println("Salary is:"+salary);
+    }
+    public void getname(){
+        System.out.println("Name is:"+name);
+    }
+    public void setname(String n){
+        name=n;
+    }
+
+}
+
+public class Main{
+    public static void main(String[] args) {
+
+       Employee abhi=new Employee();
+       abhi.setname("Abhishek Shelar");
+       abhi.getname();
+       abhi.salary=12000;
+       abhi.getsalary();
+
+    }
+}
+
