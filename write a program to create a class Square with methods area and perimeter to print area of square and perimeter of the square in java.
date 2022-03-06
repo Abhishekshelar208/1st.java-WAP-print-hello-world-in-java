@@ -1,0 +1,23 @@
+//write a program to create a class Square with methods area and perimeter to print area of square and perimeter of the square in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Square{
+    int side;
+   public int area(){
+        return side*side;
+    }
+    public int perimeter(){
+       return 4*side;
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        Square s=new Square();
+        s.side=4;
+        System.out.println(s.area());
+        System.out.println(s.perimeter());
+    }
+}
