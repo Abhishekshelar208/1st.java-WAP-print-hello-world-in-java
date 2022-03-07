@@ -1,0 +1,36 @@
+//Write a program a vector with 7 elements, as (10,30,50,20,40,10,20) remove element at 3rd and 4th position.
+//insert new element at 3rd position display the original and current size of the vector.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Vector;
+
+class Main{
+    public static void main(String[] args) {
+        Vector obj=new Vector(7);
+        obj.add(10);
+        obj.add(20);
+        obj.add(30);
+        obj.add(40);
+        obj.add(50);
+        obj.add(60);
+        obj.add(70);
+
+        System.out.println("All elements are present in our vector are:"+obj);
+        System.out.println();
+        System.out.println("Deleting the element from 3rd psoition>>>");
+        obj.remove(2);
+        System.out.println();
+        System.out.println("Deleting the element from 4rd psoition>>>");
+        obj.remove(3);
+        System.out.println();
+        System.out.println("All elements are present in our vector are:"+obj);
+        System.out.println();
+        System.out.println("Inserting 100 at 3rd position in vector.");
+        obj.add(2,100);
+        System.out.println();
+        System.out.println("All elements are present in our vector are:"+obj);
+        System.out.println();
+    }
+}
