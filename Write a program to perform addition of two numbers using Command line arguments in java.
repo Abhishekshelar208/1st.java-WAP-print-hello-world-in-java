@@ -1,0 +1,14 @@
+//Write a program to perform addition of two numbers using Command line arguments in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+
+     int a=Integer.parseInt(args[0]);
+       int b=Integer.parseInt(args[1]);
+        int sum =a+b;
+        System.out.println("Sum is:"+sum);
+    }
+}
