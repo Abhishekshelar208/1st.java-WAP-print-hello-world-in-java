@@ -1,0 +1,24 @@
+//write a program to perform Wrapper classes in java.
+//convert Int to String
+//convert Numeric String to Int.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class WrapperDemo{
+    public static void main(String[] args) {
+        int a=102;
+        System.out.println("Creating an object for value 10");
+
+        Integer i=new Integer(10);
+        System.out.println("Obtaining the value back from the object :"+i.intValue());
+
+        String str="100";
+        System.out.println("The String is:"+str);
+
+        System.out.println("Obtaining the numeric value from the String : "+Integer.parseInt(str));
+
+        System.out.println("Coverting the int to string :"+Integer.toString(i,10));
+    }
+}
+
