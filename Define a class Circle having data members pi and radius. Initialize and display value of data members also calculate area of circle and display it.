@@ -1,0 +1,22 @@
+/*Define a class Circle having data members pi and radius. Initialize and display value of data members also calculate
+area of circle and display it.
+coded BY Abhishek Dadasaheb Shelar.
+ */
+
+package com.company;
+
+public class Circle {
+
+    public static void main(String[] args) {
+        double pi=3.14, radius=14.2,area;
+
+        System.out.println("The value of pi is:"+pi);
+
+        System.out.println("The Radius is:"+radius);
+        area=pi*radius*radius;
+
+        System.out.println("Area of Circle is:"+area);
+
+    }
+
+}
