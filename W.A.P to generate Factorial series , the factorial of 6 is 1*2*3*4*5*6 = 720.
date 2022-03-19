@@ -1,0 +1,21 @@
+/*
+W.A.P to generate Factorial series , the factorial of 6 is 1*2*3*4*5*6 = 720.
+ */
+
+package com.company;
+
+import javax.script.ScriptContext;
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        int factorial=1;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the last number of your factorial series:");
+        int last=s.nextInt();
+        for (int i = 1; i <= last ; i++) {
+            factorial = factorial *i;
+        }
+        System.out.println("Factorial Series is:"+factorial);
+    }
+}
