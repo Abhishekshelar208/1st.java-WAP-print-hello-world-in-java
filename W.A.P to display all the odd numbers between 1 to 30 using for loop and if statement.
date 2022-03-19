@@ -1,0 +1,22 @@
+/*
+W.A.P to display all the odd numbers between 1 to 30 using for loop and if statement.
+//coded BY Abhishek Dadasaheb Shelar.
+ */
+package com.company;
+
+import java.util.Scanner;
+
+public class CheckOddNumber {
+    public static void main(String[] args) {
+      int start=1, end=30;
+
+        for (int i = start; i <=end ; i++) {
+            if(i%2!=0){
+                System.out.println(i);
+
+            }
+        }
+    }
+
+
+}
