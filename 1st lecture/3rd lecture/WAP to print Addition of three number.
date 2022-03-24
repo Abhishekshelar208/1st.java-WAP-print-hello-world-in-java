@@ -1,0 +1,22 @@
+//3rd lecture
+
+//WAP to print Addition of three number.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;     //java packages
+
+class Main      //normal class
+{
+  public static void main(String[] args)     //main method
+  {
+    int a=2;          //declaring variable a and give value a to 2,
+
+    int b=3;          //declaring variable a and give value b to 3,
+
+    int c=4;         //declaring variable a and give value c to 4,
+
+    int sum=a+b+c;  //calculating the sum of these three numbers
+
+    System.out.println(sum);   //Displaying the sum to the user.
+  }
+}
