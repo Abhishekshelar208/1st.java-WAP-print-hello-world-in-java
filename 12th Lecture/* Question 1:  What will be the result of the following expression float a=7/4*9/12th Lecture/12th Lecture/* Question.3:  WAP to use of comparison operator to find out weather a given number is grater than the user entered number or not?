@@ -1,0 +1,31 @@
+// 12th Lecture
+
+/*
+Question.3:  WAP to use of comparison operator to find out weather a given number is grater than the user entered number or not?
+*/
+// Practice set 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //scanner class
+
+class Main{         //normal class
+    public static void main(String[] args)    //Main method
+    {
+        Scanner s=new Scanner(System.in);      //Scanner class is used to get inputs from the user through keyboard.
+
+        System.out.println("Enter any number:");  //Displaying the message to the user to enter any number.
+        byte num=s.nextByte();                   //getting user entered number in byte datatype.
+
+        if(50>num){      //checking the main condition 
+            System.out.println("Our number is grater than your number");    //if our number is grater than the user number then it will print
+                                                                            //Our number is grater than your number.
+        }
+        else{
+            System.out.println("Your number is greater than our number"); //if our number is not grater than the user number then it will print
+                                                                         //Your number is greater than our number.
+        }
+    }
+}
