@@ -1,0 +1,34 @@
+// 7.2 th Lecture
+
+/*
+Question 4:  WAP to convert kilometers to miles which entered by the user.
+ */
+// Practice set 1.
+//Question no 4.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //Scanner class
+
+class Main{
+  public static void main(String[] args)   //Main method
+  {
+    Scanner s=new Scanner(System.in);    //Scanner class is used to getting input form the user side.
+
+    System.out.println("Enter kilometers:");   //Getting the kilometer from the user through keyboard.
+    float kil=s.nextFloat();
+
+    System.out.println();    //giving an extra line to look our output better.
+
+    System.out.println("The kilometer is:"+kil);   //Displaying the message or output to the user.
+
+    System.out.println("Converting your kilometers into miles.......");   // printing a message like: Converting your kilometers into miles....... to the user,
+    //so user can understand what's going on.
+
+    float miles=0.621f;    // Setting 1 kilometer = 0.621 miles .
+
+    System.out.println("The miles is:"+(kil*miles));  //Displaying the Final Result to the user.
+  }
+}
