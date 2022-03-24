@@ -1,0 +1,68 @@
+// 8th Lecture
+
+/*
+ Operators and types of operators and expressions in java.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+class Main{
+  public static void main(String[] args)   //Main method
+  {
+    int a=4;
+    int b=a+5;   //a+5 means 4+5=9.
+    System.out.println(b);   //Printing 9.
+
+    b += 3;    //Adding 3 in b and the value of b is 9 so answer will be 9+3=12.
+    System.out.println(b);  //Printing 12.
+
+    b -= 3;    //Subtract 3 in b and the value of b is 9 so answer will be 9 - 3 = 9.
+    System.out.println(b);  //Printing 9.
+
+    b *= 3;    //Multiply 3 in b and the value of b is 9 so answer will be 9 * 3 = 27.
+    System.out.println(b);  //Printing 27.
+
+    b /= 3;    //Divide 3 in b and the value of b is 9 so answer will be 9 / 3 = 9.
+    System.out.println(b);  //Printing 9.
+
+    b %= 3;    //Modulo 3 in b and the value of b is 9 so answer will be 9 % 3= 0.
+    System.out.println(b);  //Printing 0.
+
+    System.out.println();  //giving an extra line to look our output better.
+
+    System.out.println("Now we see the logical AND operator");   //simply prints the message to the user
+
+    System.out.println();  //giving an extra line to look our output better.
+
+    System.out.println((10>4)&&(10>2));   // if both the conditions are ture then it will print "true".
+
+    System.out.println((10>4)&&(10<2));   // if anyone conditions is become false then it will print "false".
+
+    System.out.println((10<4)&&(10<2));   // if both conditions is become false then it will print "false".
+
+    System.out.println();
+
+    System.out.println("Now we see the logical OR operator");    //simply prints the message to the user
+
+    System.out.println((10>4) || (10>2));   // if both the conditions are ture then it will print "true".
+
+    System.out.println((10>4) || (10<2));   // if anyone conditions is become false then it will print "true".
+
+    System.out.println((10<4) || (10<2));   // if both conditions is become false then it will print "false".
+
+
+    System.out.println();
+
+    System.out.println("Now we see the COMPARISON Operator");     //simply prints the message to the user
+
+    System.out.println(5==5);   //5==5 is true then it will print "true".
+
+    System.out.println(5==4);   //5==4 is false then it will print "false".
+
+    System.out.println(5!=4);   //5!=4 is true then it will print "true".
+
+    System.out.println(5!=5);   //5!=5 is false then it will print "false".
+
+  }
+}
