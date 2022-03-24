@@ -1,0 +1,21 @@
+// 12th Lecture
+
+/*
+Question.5:  WAP to find the value of the following expression.
+int x=7;
+int a=7*49/7+35/7;
+*/
+// Practice set 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+class Main{         //normal class
+    public static void main(String[] args)    //Main method
+    {
+        int x=7;         //value of x is 7.
+        int a=7*49/7+35/7;   //putting given expression in variable a
+        System.out.println(a);   //Displaying the Actual value of a 
+    }
+}
