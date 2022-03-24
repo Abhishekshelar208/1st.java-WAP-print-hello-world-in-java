@@ -1,0 +1,22 @@
+// 12th Lecture
+
+/*
+Question 1:  What will be the result of the following expression
+float a=7/4*9/2;
+ */
+// Practice set 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //scanner class
+
+class Main{         //normal class
+    public static void main(String[] args)    //Main method
+    {
+        float a=7/4*9/2;       //declaring the expression.
+
+        System.out.println(a);   //Displaying the output of the given expression.
+    }
+}
