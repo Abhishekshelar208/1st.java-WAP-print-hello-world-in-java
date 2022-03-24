@@ -1,0 +1,33 @@
+// 12th Lecture
+
+/*
+Question:2  WAP to encrypt a grade by adding 8 to it. Decrypt it to show the correct grade.
+
+ */
+// Practice set 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //scanner class
+
+class Main{         //normal class
+    public static void main(String[] args)    //Main method
+    {
+
+     //Encrypting the grade
+
+       char grade='B';     //Original grade is: 'B'.
+       grade = (char)(grade + 8);      //encrypt a grade by adding 8 to it
+
+        System.out.println(grade);  //Printing the Grade.
+
+        System.out.println();       //giving an extra line to look our output better.
+
+        //Decrypting the grade
+        grade = (char)(grade - 8);      //decrypt a grade by subtracting 8 in it.
+
+        System.out.println(grade);  //Printing the Grade.
+    }
+}
