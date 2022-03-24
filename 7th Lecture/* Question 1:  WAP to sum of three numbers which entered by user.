@@ -1,0 +1,33 @@
+// 7th Lecture
+
+/*
+Question 1:  WAP to sum of three numbers which entered by user.
+ */
+// Practice set 1.
+//Question no 1.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;          //package of java
+
+import java.util.Scanner;             //this is Scanner class
+
+class Main{                //This is a class
+  public static void main(String[] args)   //This is a main method.
+  {
+    Scanner s=new Scanner(System.in);     //Scanner class is used to getting input form the user side.
+
+
+    System.out.println("Enter number 1:");     //getting number 1 form the user
+    int a=s.nextInt();
+
+    System.out.println("Enter number 2:");    //getting number 2 form the user
+    int b=s.nextInt();
+
+    System.out.println("Enter number 3:");     //getting number 3 form the user
+    int c=s.nextInt();
+
+    System.out.println("The sum of three numbers is:"+(a+b+c));    //calculating the sum of three numbers and display to the user.
+
+  }
+}
