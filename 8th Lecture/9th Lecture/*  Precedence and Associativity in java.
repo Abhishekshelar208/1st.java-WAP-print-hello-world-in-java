@@ -1,0 +1,39 @@
+// 9th Lecture
+
+/*
+ Precedence and Associativity in java.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+class Main{
+  public static void main(String[] args)   //Main method
+  {
+    //In Java you cannot use BODMAS(brackets of Division, multiplication, Addition and Subtraction) rule.
+
+    int a = 6*5-34/2;    //Making some mathematical expression to check which operation is performs 1st
+    System.out.println(a);   // Printing the value of a
+      /*
+     = 6*5-34/2
+     = 30-34/3
+     = 30-17
+     = 12
+
+     Highest precedence goes to * and /. They are evaluated on the basis of left to right Associativity.
+       */
+
+    int b = 60/5-34*2;   //Making some mathematical expression to check which operation is performs 1st
+    System.out.println(b);    // Printing the value of b
+
+      /*
+     = 60/5-34/2
+     = 12-34*2
+     = 12-68
+     = -56
+
+     Highest precedence goes to / and *. They are evaluated on the basis of left to right Associativity.
+       */
+
+  }
+}9
