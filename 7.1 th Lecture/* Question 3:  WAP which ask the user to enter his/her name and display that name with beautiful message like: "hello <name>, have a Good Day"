@@ -1,0 +1,29 @@
+// 7.1 th Lecture
+
+/*
+Question 3:  WAP which ask the user to enter his/her name and display that name with beautiful message
+like: "hello <name>, have a Good Day"
+ */
+
+// Practice set 1.
+//Question no 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //Scanner class
+
+class Main{
+  public static void main(String[] args)   //Main method
+  {
+    Scanner s=new Scanner(System.in);    //Scanner class is used to getting input form the user side.
+
+    System.out.println("Enter your name:");   //Getting the name of the user through keyboard.
+    String name=s.nextLine();
+
+    System.out.println();    //giving an extra line to look our output better.
+
+    System.out.println("Hello "+name+" ,have a Good Day 😊");   //Displaying the message or output to the user.
+  }
+}
