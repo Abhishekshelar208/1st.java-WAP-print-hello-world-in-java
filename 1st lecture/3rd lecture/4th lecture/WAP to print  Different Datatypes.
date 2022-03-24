@@ -1,0 +1,41 @@
+//4th lecture
+
+//WAP to print  Different Datatypes.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;      //java packages
+
+class Main           //normal class
+{
+  public static void main(String[] args)      //this is a main method
+  {
+    byte age=34;         //declaring byte age which contain value 34.
+
+    short age2=87;     //declaring short age2 which contain value 82.
+
+    char X='A';       //declaring char X which contain value 'A'.
+
+    float f1=5.4f;     //declaring float f1 which contain value 5.4f.
+
+    double d1=4.660D; //declaring double d1 which contain value 4.660D.
+    boolean a=true;     //if 'a' is true then it prints true otherwise it will print false.
+
+    String str="Abhishek";       //declaring String str which contain value "Abhishek".
+
+    System.out.println("The value of byte is:"+age);  //Displaying the value of byte
+
+    System.out.println("The value of short is:"+age2);  //Displaying the value of short
+
+    System.out.println("The value of char is:"+X);   //Displaying the value of char
+
+    System.out.println("The value of float is:"+f1);   //Displaying the value of float
+
+    System.out.println("The value of double is:"+d1);   //Displaying the value of double
+
+    System.out.println("The value of boolean is:"+a);  //Displaying the value of boolean
+
+    System.out.println("The value of String is:"+str);   //Displaying the value of String
+
+
+  }
+}
