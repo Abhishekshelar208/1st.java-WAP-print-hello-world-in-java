@@ -1,0 +1,31 @@
+// 7.3 th Lecture
+
+/*
+Question 5:  WAP to detect weather entered number is Integer or not.
+ */
+
+// Practice set 1.
+//Question no 5.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;     //Scanner class
+
+class Main{
+  public static void main(String[] args)   //Main method
+  {
+    Scanner s=new Scanner(System.in);    //Scanner class is used to getting input form the user side.
+
+    System.out.println("Enter Any Number:");   //Getting the kilometer from the user through keyboard.
+    boolean num=s.hasNextInt();     //hasNextInt() --> It is used to check entered number is Integer or not.
+
+    System.out.println();    //giving an extra line to look our output better.
+
+    System.out.println("Checking entered number is Integer or not!");
+
+    System.out.println(num);  //Displaying the output to the user
+    // if entered number is Integer then Print true.
+    // if entered number is not Integer then Print false.
+  }
+}
