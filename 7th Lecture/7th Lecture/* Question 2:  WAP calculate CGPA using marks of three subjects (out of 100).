@@ -1,0 +1,57 @@
+// 7th Lecture
+
+/*
+Question 2:  WAP calculate CGPA using marks of three subjects (out of 100).
+ */
+// Practice set 1.
+//Question no 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //scanner class
+
+class Main{         //normal class
+  public static void main(String[] args)    //Main method
+  {
+    Scanner s=new Scanner(System.in);      //scanner class it is used to getting values from the user through keyboard.
+
+    System.out.println("Enter your name:");   //Getting the name from the user.
+    String name=s.nextLine();
+
+    System.out.println("Enter your subject 1 marks:");  //Getting the subject 1 marks from the user.
+    float m1=s.nextFloat();
+
+    System.out.println("Enter your subject 2 marks:");   //Getting the subject 2 marks from the user.
+    float m2=s.nextFloat();
+
+    System.out.println("Enter your subject 3 marks:");  //Getting the subject 3 marks from the user.
+    float m3=s.nextFloat();
+
+    float total=(m1+m2+m3);         //Calculating the total of all marks.
+
+    float cgpa = (m1+m2+m3)/3;     //Calculating the Actual CGPA of your 3 subjects marks.
+
+    System.out.println("Your Name is:"+name);     //Displaying the name which entered by the user.
+
+    System.out.println();  //giving an extra line to look our output better.
+
+
+    System.out.println("Your subject 1 marks:"+m1);    //Displaying the subject 1 marks which entered by the user.
+    System.out.println("Your subject 2 marks:"+m2);    //Displaying the subject 2 marks which entered by the user.
+    System.out.println("Your subject 3 marks:"+m3);    //Displaying the subject 3 marks which entered by the user.
+
+    System.out.println();    //giving an extra line to look our output better.
+
+
+    System.out.println("Your total of all marks is:"+total);   //Displaying the total of all three subjects marks.
+
+    System.out.println();   //giving an extra line to look our output better.
+
+    System.out.println();   //giving an extra line to look our output better.
+
+    System.out.println("The CGPA is:"+cgpa);    //Displaying the Final CGPA of three subjects marks.
+
+  }
+}
