@@ -1,0 +1,14 @@
+//1st lecture
+
+//WAP to print hello world
+//coded BY Abhishek Dadasaheb Shelar
+
+package com.company;   //java package
+
+class Main    //class
+{
+  public static void main(String[] args)    //main method
+  {
+    System.out.println("Hello world");     //System.out.println(); --> it is used to print any statement to the user.
+  }
+}
