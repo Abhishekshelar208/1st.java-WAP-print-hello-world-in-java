@@ -1,0 +1,21 @@
+// 12th Lecture
+
+/*
+Question.4:  WAP a following expression in java program (v*v-u*u)
+                                                        _________
+                                                          2*a*s.
+*/
+// Practice set 2.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+class Main{         //normal class
+    public static void main(String[] args)    //Main method
+    {
+        float v=2,u=4,a=3,s=6;       //variables in expressions
+        float A= (v*v-u*u)/2*a*s;    //This is how expression is written in java
+        System.out.println(A);   //Displaying the result.
+    }
+}
