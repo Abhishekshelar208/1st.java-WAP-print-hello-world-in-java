@@ -1,0 +1,70 @@
+// 14th Lecture
+/*
+Java Strings and all the string methods in java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        String name=new String("Java is an object oriented programming language it is developed by sun micro system");      //Making an object for String.
+        System.out.println(name);    //Printing the name.
+
+        String name1="Java Programming";     //We can also declare String like this.
+        System.out.println(name1);  //Printing the name1.  13 in our case.
+
+        Scanner s=new Scanner(System.in);  //This is Scanner object.
+
+        System.out.println("Enter any String :");
+
+        String get=s.nextLine();  //nextLine() is used to get all the data which entered by the user
+
+        System.out.println(get); //Print all the data as it is which entered by the user.
+
+        System.out.println("The length is:"+get.length());   //.length is used to calculate total length of the String which entered by the user.
+
+        System.out.println("To convert String into lowercase: "+get.toLowerCase(Locale.ROOT));  //.toLowerCase this is used to convert all string into lower case.
+
+        System.out.println("To convert String into Uppercase: "+get.toUpperCase(Locale.ROOT));  //.toLowerCase this is used to convert all string into Upper case.
+
+        String name2 = "     Abhishek       ";
+        System.out.println("After removing the all spaces :"+ name2.trim());  //.trim() is used to removing all spaces you putted in the string .
+
+        System.out.println("I want start my string with object oriented : "+name.substring(11)); //This is used to start string whenever you want but only thing
+                                                                                                 // is you have to give number in () to start your String
+
+        System.out.println("I want some specific string like: I want my string starts with object and end with language :  "+name.substring(11,47)); // This is used to start and end String whenever you want.
+                                   // But only thing is you have to tell only starting and ending index number.
+
+        System.out.println("This is used to replace with old char with new char : "+name1.replace('a','x')); //.replace it is used to replace old char with new char.
+
+        System.out.println("This is used to check your String was Starts with your wanted word or not?   : "+name.startsWith("developed")); //This is used to check your String was Starts with your wanted word or not?.
+
+        System.out.println("This is used to check your String was Ends with your wanted word or not?   : "+name.endsWith("system")); //This is used to check your String was Ends with your wanted word or not?.
+
+        System.out.println(name1.charAt(2)); // .charAt() it returns character at a given index position, in our case it is v.
+
+        System.out.println("This is used to check index number of your wanted number:  "+name1.indexOf("Pro"));  //it is used to check index number of your entered word in ().
+
+        System.out.println(name1.indexOf("mm",11)); //it returns the index of the given String for ex: name1.indexOf("mm") returns
+                                                                // 1 which is the first occurence of mm is correct position then entered number as it is, otherwise it prints -1.
+
+        System.out.println(name1.lastIndexOf("i"));  //It returns the last index of the given String .
+
+        System.out.println(name1.lastIndexOf("i",13)); //It returns the last index of the given string before index 13.
+
+        System.out.println(name1.equals("Java Programming")); //This is used to check your entered number in bracket is equal to the name1 or not?
+                                                               // if yes then prints true otherwise false.
+
+        System.out.println(name1.equalsIgnoreCase("java programming")); //It returns true if two String are equal ignoring the case of characters.
+
+    }
+}
+
+
+
