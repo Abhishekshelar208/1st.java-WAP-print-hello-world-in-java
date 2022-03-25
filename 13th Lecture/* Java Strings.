@@ -1,0 +1,29 @@
+// 13th Lecture
+/*
+Java Strings.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        String name=new String("Abhishek");      //Making an object for String.
+        System.out.println(name);    //Printing the name.
+
+        String name1="Shelar";     //We can also declare String like this.
+        System.out.println(name1);  //Printing the name1.
+
+        Scanner s=new Scanner(System.in);  //This is Scanner object.
+
+        String get=s.nextLine();  //nextLine() is used to get all the data which entered by the user
+        System.out.println(get); //Print all the data as it is which entered by the user.
+
+    }
+}
+
+
+
