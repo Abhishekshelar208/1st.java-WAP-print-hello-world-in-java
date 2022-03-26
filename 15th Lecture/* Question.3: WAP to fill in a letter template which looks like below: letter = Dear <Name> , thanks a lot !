@@ -1,0 +1,30 @@
+// 15th Lecture
+
+/*
+Question.3: WAP to fill in a letter template which looks like below:
+letter = Dear <Name> , thanks a lot !
+*/
+// Practice set 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+       Scanner s=new Scanner(System.in);    //making Scanner object to get input from the user.
+
+        String a = "Dear <Name> , thanks a lot!";
+
+        System.out.println("Enter Your name:");  //getting string from the user.
+        String b=s.nextLine();  //nextLine() it is used to get as it is input which entered by the user.
+
+       // System.out.printf("Letter = Dear %s , thanks a lot !",a);   //using of this also replace your entered name with <Name>.
+
+        System.out.println("Replaced String is:"+a.replace("<Name>",b));  //using of this also replace your entered name with <Name>.
+
+    }
+}
