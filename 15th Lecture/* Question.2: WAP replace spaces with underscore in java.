@@ -1,0 +1,27 @@
+// 15th Lecture
+
+/*
+Question.2: WAP replace spaces with underscore in java.
+*/
+// Practice set 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;
+
+import java.util.Scanner;     //scanner class
+
+class Main{         //normal class
+    public static void main(String[] args) {   //main method in java.
+        Scanner s=new Scanner(System.in);       //this is a Scanner object to get values from the user.
+
+        System.out.println("Enter any String:");    //Printing the statement to the user
+        String a=s.nextLine();      //this is used to get input from the user as it is.
+
+        System.out.println("Your Entered String is:"+a);   //printing the user Entered String as it is.
+
+        System.out.println("After replacing your spaces with underscore : "+a.replace(" ","_"));  //Printing the statement
+                                                                                                             //After replacing your spaces with underscore.
+
+    }
+}
