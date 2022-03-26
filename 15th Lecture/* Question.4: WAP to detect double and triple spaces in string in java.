@@ -1,0 +1,24 @@
+// 15th Lecture
+/*
+Question.4: WAP to detect double and triple spaces in string in java.
+*/
+// Practice set 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+        Scanner s=new Scanner(System.in);  //Making scanner object.
+
+        System.out.println("Enter any string:");   //printing the message to the user.
+        String a=s.nextLine();                    //getting output from the user through keyword.
+
+        System.out.println("Double spaces is located at index no :"+a.indexOf("  ")); //Finding the double spaces in your entered string.
+        System.out.println("Triple spaces is located at index no  :"+a.indexOf("   "));  //Finding the triple spaces in your entered string.
+    }
+}
