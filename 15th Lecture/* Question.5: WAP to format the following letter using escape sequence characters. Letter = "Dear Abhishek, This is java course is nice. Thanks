@@ -1,0 +1,27 @@
+// 15th Lecture
+/*
+Question.5: WAP to format the following letter using escape sequence characters.
+Letter = "Dear Abhishek, This is java course is nice. Thanks
+*/
+// Practice set 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+        Scanner s=new Scanner(System.in);  //Making scanner object.
+      //  System.out.println("Enter any string:");
+       // String a=s.nextLine();
+
+      String Letter = "Dear name , \n\tThis java course is nice. \n\tThanks";
+
+        System.out.println(Letter);
+
+
+    }
+}
