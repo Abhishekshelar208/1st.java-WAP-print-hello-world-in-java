@@ -1,0 +1,100 @@
+// 17th Lecture
+/*
+Java Tutorial: Relational and Logical Operators in Java
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+        boolean a=true;
+        boolean b=false;
+
+        boolean a1=false;
+        boolean b1=false;
+
+        boolean a2=true;
+        boolean b2=true;
+        System.out.println("Using && (AND) operator...");  //printing the message to the user.
+
+        //In && operator both condition must be true if both conditions
+        // are true then it will execute if block otherwise else block will execute.
+
+        if(a && b){     //in this condition second condition is false , so it will print No.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        //In && operator both condition must be true if both conditions
+        // are true then it will execute if block otherwise else block will execute.
+
+        if(a1 && b1){   //in this condition both conditions are false , so it will print No.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        //In && (AND) operator both condition must be true if both conditions
+        // are true then it will execute if block otherwise else block will execute.
+
+        if(a2 && b2){   //in this condition both conditions are true , so it will print Yes.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        System.out.println();    //giving an extra line to look our output better.
+
+        System.out.println("Using || (OR) operator....");     //printing the message to the user.
+
+        //In || (OR) operator in this operator anyone condition must be true , if both the conditions are
+        //false then that time it will only execute else block of code.
+
+        if(a || b){     //in this condition second condition is false, but first condition is true , so it will print Yes.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        //In || (OR) operator in this operator anyone condition must be true , if both the conditions are
+        //false then that time it will only execute else block of code.
+
+        if(a1 || b1){   //in this condition both the condition is false , so it will print No.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        //In || (OR) operator in this operator anyone condition must be true , if both the conditions are
+        //false then that time it will only execute else block of code.
+
+        if(a2 || b2){   //in this condition both conditions are true , so it will print Yes.
+            System.out.println("Yes");
+        }else
+        {
+            System.out.println("No");
+        }
+
+        System.out.println();     //giving an extra line to look our output better.
+
+        System.out.println("Using ! (NOT) Operator...");     //printing the message to the user.
+
+        System.out.print("Not(a) is:");   //printing the message to the user.
+        System.out.println(!a);     // The value of (a) is true but after using not operator the value of (a) is false.
+        System.out.print("Not(b) is:");   //printing the message to the user.
+        System.out.println(!b);  // The value of (b) is false but after using not operator the value of (a) is true.
+
+
+    }
+}
