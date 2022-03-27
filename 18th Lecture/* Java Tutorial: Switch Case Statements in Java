@@ -1,0 +1,72 @@
+// 18th Lecture
+/*
+Java Tutorial: Switch Case Statements in Java
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter your age:");
+        int age = s.nextInt();
+
+       /*
+
+       //This is not an efficient way to check multiple cases one by one...
+        if(age>18){
+            System.out.println("you are going to become adult...");
+        }
+        else if(age>23){
+            System.out.println("you are going to get job...");
+        }
+        else if(age>27){
+            System.out.println("you are going to get married...");
+        }
+        else if(age>32){
+            System.out.println("you are going to become father...");
+        }
+        else if(age>50){
+            System.out.println("you are going to become grandpa...");
+        }else {
+            System.out.println("Enjoy your life......");
+        }
+
+        */
+
+        //This is switch statement:
+        // Switch-case is used when we have to make a choice between number of alternative for a given variable.
+
+        switch (age){
+            case 18:
+                System.out.println("you are going to become adult...");
+                break;
+
+            case 23:
+                System.out.println("you are going to get job...");
+                break;
+
+            case 27:
+                System.out.println("you are going to get married...");
+                break;
+
+            case 32:
+                System.out.println("you are going to become father...");
+                break;
+
+            case 50:
+                System.out.println("you are going to become grandpa...");
+                break;
+
+            default:
+                System.out.println("Enjoy your life......");
+        }
+
+
+    }
+}
