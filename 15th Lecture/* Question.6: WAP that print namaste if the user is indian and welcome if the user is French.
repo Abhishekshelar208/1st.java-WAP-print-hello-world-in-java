@@ -1,0 +1,54 @@
+// 15th Lecture
+/*
+Question.6: WAP that print namaste if the user is indian and welcome if the user is French.
+*/
+// Practice set 3.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+
+        Scanner s=new Scanner(System.in);  //Making scanner object.
+        System.out.println("Enter your country name:");
+        String name=s.nextLine();
+
+        switch (name){
+            case "India":
+                System.out.println("Namaste ...");
+                break;
+
+            case "india":
+                System.out.println("Namaste ...");
+                break;
+
+            case "INDIA":
+                System.out.println("Namaste ...");
+                break;
+
+            case "FRENCH":
+                System.out.println("Bunger ...");
+                break;
+
+            case "French":
+                System.out.println("Bunger ...");
+                break;
+
+            case "french":
+                System.out.println("Bunger ...");
+                break;
+
+            default:
+                System.out.println("Invalid input");
+        }
+
+
+
+
+
+    }
+}
