@@ -1,0 +1,44 @@
+// 19th Lecture
+//practice set 4.
+/*
+Question 1: WAP to check what will be the output of the following program:
+int a = 10;
+if(a = 11){
+System.out.println("I am 11");
+}
+else{
+System.out.println("I am not 11");
+}
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+class Main{
+    public static void main(String[] args) {   //main method
+       /*
+       //In this question there is an error because we cannot assign the value in if() as a condition.
+        int a=10;
+        if(a = 11){
+            System.out.println("I am 11");
+        }
+        else{
+            System.out.println("I am not 11");
+        }
+
+        */
+
+        //if we have to correct this problem ,so we have to make some changes to it.
+        //This is the correct way to solve this problem.
+
+        int a=10;   //giving value 10 to a.
+        if(a==11){    //using this condition it will print I am not 11.
+            System.out.println("I am 11");   //simply printing the message
+        }
+        else{
+            System.out.println("I am not 11");   //simply printing the message
+        }
+
+    }
+}
