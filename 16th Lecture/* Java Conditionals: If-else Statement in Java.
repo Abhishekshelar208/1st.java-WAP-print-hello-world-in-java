@@ -1,0 +1,48 @@
+// 16th Lecture
+/*
+Java Conditionals: If-else Statement in Java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+
+package com.company;     //java package
+
+import java.util.Scanner;   //Scanner class . it is used to get input from the user.
+
+class Main{    //main class
+    public static void main(String[] args) {    //main method in java
+     int age = 6;
+     int age1 = 36;
+     int age2 = 18;
+
+     //in if else statement , if the condition is true then it will execute the if block of code, otherwise else block of execute.
+
+     if(age>18){     // this condition is false then it will print you cannot drive.
+         System.out.println("You can drive.");
+     }
+     else{
+         System.out.println("you cannot drive.");
+     }
+
+        if(age1>18){    // this condition is true then it will print you can drive.
+            System.out.println("You can drive.");
+        }
+        else{
+            System.out.println("you cannot drive.");
+        }
+
+        if(age2>18){  // this condition is false then it will print you cannot drive.
+            System.out.println("You can drive.");
+        }
+        else{
+            System.out.println("you cannot drive.");
+        }
+
+        if(age2>=18){     // this condition is true then it will print you can drive.
+            System.out.println("You can drive.");
+        }
+        else{
+            System.out.println("you cannot drive.");
+        }
+    }
+}
