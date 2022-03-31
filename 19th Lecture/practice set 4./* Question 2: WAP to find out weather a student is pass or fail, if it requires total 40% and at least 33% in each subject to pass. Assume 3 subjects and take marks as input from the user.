@@ -1,0 +1,47 @@
+// 19th Lecture
+//practice set 4.
+/*
+Question 2: WAP to find out weather a student is pass or fail, if it requires total 40% and at least 33% in each subject
+to pass. Assume 3 subjects and take marks as input from the user.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import javax.security.sasl.SaslClient;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter subject 1 marks:");
+        float m1=s.nextFloat();
+
+        System.out.println("Enter subject 2 marks:");
+        float m2=s.nextFloat();
+
+        System.out.println("Enter subject 3 marks:");
+        float m3=s.nextFloat();
+        float total = (m1+m2+m3);
+        float percentage = (total/300)*100;
+
+        if((m1<=33) || (m2 <= 33) || (m3 <= 33)){
+            System.out.println("Each subject required at least 33% marks......");
+            System.out.println("Sorry you are fail....");
+            if(total<120){
+                System.out.println("Minimum total required is 40% you are fail....");
+            }
+            else{
+                System.out.printf("You are pass with %f percentage, congratulations......",percentage);
+            }
+        }
+        else{
+            System.out.println("Subject 1 marks is:"+m1);
+            System.out.println("Subject 2 marks is:"+m2);
+            System.out.println("Subject 3 marks is:"+m3);
+        }
+    }
+
+}
+
+
