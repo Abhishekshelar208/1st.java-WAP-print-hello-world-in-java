@@ -1,0 +1,45 @@
+// 19th Lecture
+//practice set 4.
+/*
+Question 3: WAP to calculate income tax paid by an employee to the government as per the salary mentioned below:
+income state                 tax
+2.5L - 5.0L                   5%
+5.0L - 10.0L                 20%
+10.0L - Above                30%
+
+Note that there is no tax below 2.5L . take input amount as input from the user.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import javax.security.sasl.SaslClient;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter your salary(in lakhs): ");
+        float sal=s.nextFloat();
+
+        if(sal < 250000){
+            System.out.println("You don't have to pay any tax........");
+        }
+        else if(sal >= 250000 && sal < 500000){
+            System.out.println("you have to pay 5% tax......");
+        }
+        else if(sal >= 500000 && sal < 1000000){
+            System.out.println("you have to pay 20% tax......");
+        }
+        else if(sal >= 1000000){
+            System.out.println("you have to pay 30% tax......");
+        }
+        else{
+            System.out.println("invalid input.......");
+        }
+
+    }
+
+}
+
+
