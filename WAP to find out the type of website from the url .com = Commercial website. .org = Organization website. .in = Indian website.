@@ -1,0 +1,36 @@
+// 19th Lecture
+
+//practice set 4.
+/*
+Question 6: WAP to find out the type of website from the url
+.com = Commercial website.
+.org = Organization website.
+.in = Indian website.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import javax.security.sasl.SaslClient;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+
+        System.out.println("Enter any Website:");
+        String web=s.nextLine();
+
+        if(web.endsWith(".com")){
+            System.out.println("This is a Commercial website");
+        }
+        else if(web.endsWith(".org")){
+            System.out.println("This is a Organization website");
+        }
+        else if(web.endsWith(".in")){
+            System.out.println("This is a Indian website");
+        }
+    }
+
+}
+
