@@ -1,0 +1,25 @@
+// 25 th Lecture
+//java practice set 5.
+/*
+Question 6: Write a program to find factorial of given number by the user in java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+//java practice set 5.
+package com.company;
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int fact = 1;
+        System.out.println("Enter any number:");
+        int n=s.nextInt();
+
+        for (int i = 1; i <=n ; i++) {
+            fact = fact * i;
+        }
+        System.out.printf("The factorail of %d is : %d",n,fact);
+
+    }
+}
