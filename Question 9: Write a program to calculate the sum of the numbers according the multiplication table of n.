@@ -1,0 +1,29 @@
+// 25 th Lecture
+
+//java practice set 5.
+/*
+Question 9: Write a program to calculate the sum of the numbers according the multiplication table of n.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+//java practice set 5.
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int n=s.nextInt();
+        int sum = 0;
+
+        for (int i = 1; i<=10 ; i++) {
+            System.out.printf("%d X %d = %d\n",n,i,n*i);
+            sum = sum + n*i;
+        }
+        System.out.println();
+        System.out.println("The sum of your multiplication table is:"+sum);
+
+
+    }
+}
