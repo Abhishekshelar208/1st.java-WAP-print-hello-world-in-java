@@ -1,0 +1,26 @@
+// 25 th Lecture
+//java practice set 5.
+/*
+Question 2: Write a program sum first n even numbers using while loop in java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+//java practice set 5.
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int sum = 0;
+        System.out.println("Enter any number:");
+        int n=s.nextInt();
+
+        for (int i = 1; i <=n; i++) {
+            if(i%2==0){
+                sum = sum + i;
+            }
+        }
+        System.out.println("The sum of first even number is:"+sum);
+    }
+}
