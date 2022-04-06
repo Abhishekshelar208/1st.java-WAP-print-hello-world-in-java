@@ -1,0 +1,52 @@
+// 26 th Lecture
+/*
+Java Tutorial: Introduction to Arrays.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        /*
+        classroom with 500 students - we have to store marks of 500 students.
+        we have two options -
+        1. Create a 500 variable.
+        2. use array. (recommended).
+         */
+           /*
+        //3 ways to declare an index.
+        //1st way :
+        int [] marks;
+        marks = new int[5];
+         */
+
+          /*
+        //3 ways to declare an index.
+        //2nd way :
+        int [] marks = new int[];
+         */
+
+          /*
+        //3 ways to declare an index.
+        //3rd way :
+        int [] marks = {1,2,3,4,5};
+         */
+
+        int [] marks = new int[5];  // Also we can declare an array.
+        marks [0] = 12;  // giving the element which present in 0th index of array.
+        marks [1] = 21;  // giving the element which present in 1st index of array.
+        marks [2] = 22;   // giving the element which present in 2nd index of array.
+        marks [3] = 34;  // giving the element which present in 3rd index of array.
+        marks [4] = 56;  // giving the element which present in 4th index of array.
+
+        System.out.println(marks[0]);   // print the element which present in 0th index of array.
+        System.out.println(marks[1]);  // print the element which present in 1st index of array.
+        System.out.println(marks[2]);  // print the element which present in 2nd index of array.
+        System.out.println(marks[3]);  // print the element which present in 3rd index of array.
+        System.out.println(marks[4]);  // print the element which present in 4th index of array.
+
+    }
+}
