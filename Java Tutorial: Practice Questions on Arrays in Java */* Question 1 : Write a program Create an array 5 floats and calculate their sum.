@@ -1,0 +1,36 @@
+// 29 th Lecture
+
+/*
+Java Tutorial: Practice Questions on Arrays in Java
+*/
+/*
+Question 1 : Write a program Create an array 5 floats and calculate their sum.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        float sum = 0;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter size of your array:");
+        int size=s.nextInt();
+        float [] arr = new float[size];
+        System.out.printf("Enter %d elements in array: ",size);
+        for (int i = 0; i <arr.length; i++) {
+            arr[i]=s.nextFloat();
+        }
+        System.out.println("Your array elements are: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println("\nNow finding the sum of your all array elements.....");
+       for(float element : arr){
+           sum = sum + element;
+       }
+        System.out.println("The sum is:"+sum);
+    }
+}
