@@ -1,0 +1,33 @@
+//write a program to accept two numbers from the user and print the series according to numbers
+//and also find the sum of that series of numbers.
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        int sum=0;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter two no:");
+        int a=s.nextInt();
+        int b=s.nextInt();
+
+
+    if(a<b){
+        for (int i = a; i <=b ; i++) {
+            System.out.println(i);
+            sum = sum + i;
+
+        }
+        System.out.println("The sum is:"+sum);
+    }
+          if(a>b){
+               for (int i=a; i>=b; i--) {
+                   System.out.println(i);
+                   sum = sum + i;
+
+               }
+              System.out.println("The sum is:"+sum);
+           }
+       }
+    }
