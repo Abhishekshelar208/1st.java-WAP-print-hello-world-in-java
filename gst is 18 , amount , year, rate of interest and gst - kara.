@@ -1,0 +1,31 @@
+/*
+gst is 18 , amount , year, rate of interest and gst - kara.
+ */
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter amount:");
+        float amount=s.nextFloat();
+        System.out.println("Enter year:");
+        int year=s.nextInt();
+        System.out.println("Enter rate of interest:");
+        float rate=s.nextFloat();
+
+        float si=(amount*year*rate)/100;
+        float si2=amount;
+        System.out.println("The final amount with interest is:"+(si+si2));
+
+      float si3 = (si+si2);
+      float si4 = (si3*18)/100;
+        System.out.println("With gst"+si4);
+        System.out.println("With gst"+(si3-si4));
+
+
+
+    }
+}
