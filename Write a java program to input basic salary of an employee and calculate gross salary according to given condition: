@@ -1,0 +1,38 @@
+//Write a java program to input basic salary of an employee and calculate gross salary according to given condition:
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        float hra, da;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter basic salary:");
+        float sal=s.nextFloat();
+
+        System.out.println("Calculating gross salary.....");
+        if(sal<=10000){
+            hra = (sal*20)/100;
+            da = (sal*80)/100;
+           // System.out.println("The Hra is:"+hra);
+           // System.out.println("The Da is:"+da);
+            System.out.println("Salary including hra and da is:"+(sal+hra+da));
+
+        }
+        if(sal>=10001 && sal <=20000){
+            hra = (sal*25)/100;
+            da = (sal*90)/100;
+           // System.out.println("The Hra is:"+hra);
+           // System.out.println("The Da is:"+da);
+            System.out.println("Salary including hra and da is:"+(sal+hra+da));
+        }
+        if(sal>=20001){
+            hra = (sal*30)/100;
+            da = (sal*95)/100;
+          //  System.out.println("The Hra is:"+hra);
+          //  System.out.println("The Da is:"+da);
+            System.out.println("Salary including hra and da is:"+(sal+hra+da));
+        }
+    }
+}
