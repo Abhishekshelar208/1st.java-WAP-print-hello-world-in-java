@@ -1,0 +1,43 @@
+// 33 rd Lecture
+/*
+Java Tutorial : Variable Arguments (Varargs) in java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main{
+    //Creating the method to add number.
+
+    static int sum(int a,int b){  //This method add two no.
+        return a+b;
+    }
+    static int sum(int a,int b, int c){ //This method add three no.
+        return a+b+c;
+    }
+    static int sum(int a,int b, int c,int d){  //This method add four no.
+        return a+b+c+d;
+    }
+    static int newsum(int ...arr){
+        // Available as int [] arr;
+        int result = 0;
+       for(int a: arr){
+           result += a;
+       }
+       return result;
+
+    }
+    public static void main(String[] args) {
+        System.out.println("Welcome to varargs tutorial.....");
+
+        System.out.println("The sum of 4 and 5 is:"+sum(4,5));
+        System.out.println("The sum of 4,5 and 5 is:"+sum(4,5,6));
+        System.out.println("The sum of 1,2,3 and 4 is:"+sum(1,2,3,4));
+
+        System.out.println("The sum of 1,2,3,4,5,6,7,and 8 is:"+newsum(1,2,3,4,5,6,7,8));
+
+
+    }
+}
