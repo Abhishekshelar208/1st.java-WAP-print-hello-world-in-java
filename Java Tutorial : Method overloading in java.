@@ -1,0 +1,61 @@
+// 32 st Lecture
+/*
+Java Tutorial : Method overloading in java.
+*/
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    static void change(int a){
+        a = 89;
+    }
+    static void change2(int arr[]){
+        arr[0] = 89;
+    }
+
+    static void morning(){
+        System.out.println("Hello Abhishek, Good morning.....");
+    }
+    static void foo(){
+        System.out.println("Good morning brooooooo......");
+    }static void foo(int a){
+        System.out.println("Good morning " + a + " brooooooo......");
+    }
+    static void foo(int a,int b){
+        System.out.println("Good morning " + a + " brooooooo......");
+        System.out.println("Good morning " + b + " brooooooo......");
+    }
+
+    public static void main(String[] args) {
+       // Main s=new Main();
+       // morning();
+
+
+        //changing the interger.
+       /*
+        int x = 45;
+        change(x);
+        System.out.println("The value of X after running is:"+x);
+
+        */
+
+        //now changing the Array.
+        /*
+        int marks [] = {77,66,55,67,65};
+        change2(marks);
+        System.out.println("The value of X after running the code: "+marks[0]);
+
+         */
+
+       //Method overloading in java.....
+        foo();
+        foo(12);
+        foo(3000,4000);
+        //same name with different parameters.
+
+
+    }
+}
