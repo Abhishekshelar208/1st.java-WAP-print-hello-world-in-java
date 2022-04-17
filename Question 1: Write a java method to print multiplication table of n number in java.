@@ -1,0 +1,28 @@
+// 35 th Lecture
+//Java practice set : 7
+/*
+Question 1: Write a java method to print multiplication table of n number in java.
+ */
+//Java practice set : 7
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main{
+    static void table(int n) {
+        for (int i = 1; i <=10 ; i++) {
+            System.out.printf("\n%d X %d = %d",n,i,n*i);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int n=s.nextInt();
+        table(n);
+    }
+
+}
+
