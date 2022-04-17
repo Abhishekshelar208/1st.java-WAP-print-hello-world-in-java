@@ -1,0 +1,23 @@
+// 35 th Lecture
+//Java practice set : 7
+/*
+Question 7: Write a java method to repeat 4 using recursion method in java.
+ */
+//Java practice set : 7
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    static int repeat(int n){
+        for (int i = 0; i <10 ; i++) {
+            System.out.println(n);
+        }
+        return 0;
+    }
+    public static void main(String[] args) {
+        repeat(4);
+    }
+}
