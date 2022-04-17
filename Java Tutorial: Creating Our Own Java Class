@@ -1,0 +1,47 @@
+// 38 th Lecture
+/*
+Java Tutorial: Creating Our Own Java Class
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+class Employee{
+    int id;
+    String name;
+    int salary;
+    public void printdetails(){
+        System.out.println("My id is:"+id);
+        System.out.println("My name is:"+name);
+    }
+    public int getsalary(){
+       return salary;
+    }
+}
+
+public class Main{
+    public static void main(String[] args) {
+        System.out.println("This is a custom class");
+        Employee Abhi =new Employee();  //Instantiating the new Employee object.
+        Employee Vedant =new Employee();  //Instantiating the new Employee object.
+        //Setting properties.
+        Abhi.id = 12;
+        Abhi.name = "Abhishek Shelar";
+        Abhi.salary = 120000;
+
+        Vedant.id = 13;
+        Vedant.name = "Vedant Shelar";
+        Vedant.salary = 150000;
+
+        //printing the attributes.
+        System.out.println(Abhi.id);
+        System.out.println(Abhi.name);
+
+        //calling the method
+        Abhi.printdetails();
+        Vedant.printdetails();
+        Abhi.getsalary();
+        Vedant.getsalary();
+
+    }
+}
