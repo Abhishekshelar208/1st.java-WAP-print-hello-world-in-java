@@ -1,0 +1,47 @@
+// 38 th Lecture
+//Java practice set 8.
+//Java Tutorial: Basic Questions on Object Oriented Programming
+/*
+Question no 1 : Write a class Employee with following properties and method:
+Salary (properties) (int)
+getSalary(method retuning int)
+name(property)(String)
+getName(method retuning String)
+setName(method changing name)
+
+ */
+//Java Tutorial: Basic Questions on Object Oriented Programming
+//Java practice set 8.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import jdk.swing.interop.SwingInterOpUtils;
+
+class Employee{
+    int salary;
+    String name;
+
+    public int getSalary(){
+        return salary;
+    }
+    public void getName(){
+        System.out.println(name);
+    }
+    public void setName(String n){
+        name = n;
+        System.out.println(name);
+    }
+}
+
+ public class Main{
+    public static void main(String[] args) {
+       Employee abhi = new Employee();
+
+       abhi.name = "Abhishek";
+       abhi.salary=233;
+        abhi.getSalary();
+       abhi.getName();
+
+    }
+}
