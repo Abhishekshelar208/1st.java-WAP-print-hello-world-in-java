@@ -1,0 +1,21 @@
+// 35 th Lecture
+//Java practice set : 7
+/*
+Question 8: Write a java method to convert celcius into farenheit in java.
+ */
+//Java practice set : 7
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+ static void covert(int n){
+float celcius = 32;
+     System.out.println("The farenheit is:"+(n*9/5+32));
+ }
+    public static void main(String[] args) {
+        covert(5);
+    }
+}
