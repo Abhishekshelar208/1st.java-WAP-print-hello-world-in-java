@@ -1,0 +1,30 @@
+// 35 th Lecture
+//Java practice set : 7
+/*
+Question 3: Write a java method to print sum of first n number in java.
+ */
+//Java practice set : 7
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main{
+   static void sum(int n){
+       int sum = 0;
+       for (int i = 0; i <=n ; i++) {
+           sum = sum + n;
+       }
+       System.out.printf("The sum of %d is : %d \n",n,sum);
+   }
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int n=s.nextInt();
+        sum(n);
+
+    }
+
+}
