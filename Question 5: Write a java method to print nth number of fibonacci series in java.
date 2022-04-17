@@ -1,0 +1,35 @@
+// 35 th Lecture
+//Java practice set : 7
+/*
+Question 5: Write a java method to print nth number of fibonacci series in java.
+ */
+//Java practice set : 7
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main{
+    static int fibonacci(int n) {
+        if (n == 0 || n == 1) {
+            System.out.println(" 1" + " 2");
+
+        } else {
+            int sum = 0;
+            for (int i = 0; i <= n; i++) {
+                sum = sum + i;
+            }
+            System.out.println("The fibonacci series for x is : "+sum);
+
+        }
+        return 0;
+    }
+    public static void main(String[] args) {
+        int x = 10;
+        System.out.println(fibonacci(x));
+    }
+
+}
+
+
