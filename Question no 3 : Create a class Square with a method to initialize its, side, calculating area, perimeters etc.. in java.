@@ -1,0 +1,32 @@
+// 38 th Lecture
+//Java practice set 8.
+//Java Tutorial: Basic Questions on Object Oriented Programming
+/*
+Question no 3 : Create a class Square with a method to initialize its, side, calculating area, perimeters etc.. in java.
+ */
+//Java Tutorial: Basic Questions on Object Oriented Programming
+//Java practice set 8.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Square {
+     static void initialize(int n){
+         System.out.println("Enter side of square:");
+         float area = n;
+         System.out.println("Your square side is:"+area);
+
+    }
+    static void calculating(int n){
+      float area = n;
+        System.out.println("Area of your square is:"+(area*area));
+    }
+
+    public static void main(String[] args) {
+        initialize(5);
+        calculating(5);
+    }
+
+}
