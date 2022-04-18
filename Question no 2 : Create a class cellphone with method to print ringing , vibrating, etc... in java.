@@ -1,0 +1,29 @@
+// 38 th Lecture
+//Java practice set 8.
+//Java Tutorial: Basic Questions on Object Oriented Programming
+/*
+Question no 2 : Create a class cellphone with method to print ringing , vibrating, etc... in java.
+ */
+//Java Tutorial: Basic Questions on Object Oriented Programming
+//Java practice set 8.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+public class Cellphone {
+    static void call(){
+        System.out.println("Calling......");
+    }
+    static void ring(){
+        System.out.println("Ringing......");
+    }
+    static void vibrate(){
+        System.out.println("Vibrating......");
+    }
+
+    public static void main(String[] args) {
+        call();
+        ring();
+        vibrate();
+    }
+}
