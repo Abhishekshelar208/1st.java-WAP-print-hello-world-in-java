@@ -1,0 +1,30 @@
+// 38 th Lecture
+
+//Java practice set 8.
+//Java Tutorial: Basic Questions on Object Oriented Programming
+/*
+Question no 5 : Create a class Tommyvecetti for Rockstar games capable of hitting(print hitting) , running, firing , etc in java.
+ */
+//Java Tutorial: Basic Questions on Object Oriented Programming
+//Java practice set 8.
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+public class Tommyvecetti {
+    static void hitting(){
+        System.out.println("print hitting");
+    }
+    static void running(){
+        System.out.println("Print running");
+    }
+    static void firing(){
+        System.out.println("Print firing");
+    }
+    public static void main(String[] args) {
+        hitting();
+        running();
+        firing();
+    }
+
+}
