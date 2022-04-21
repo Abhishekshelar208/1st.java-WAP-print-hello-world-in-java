@@ -1,0 +1,37 @@
+//44 th Lecture
+//Exercise no 3.
+/*
+Java Tutorial : Exercise on Access specifiers and Constructor in java.
+ */
+//Question no 1: Create class Cylinder and use the getters and setters to set its radius and height in java.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+
+//Imp note: if you want ot get getter and setter then click on code and generate your getter and setter.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Cylinder{
+   private int radius;
+   private int height;
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+}
+
