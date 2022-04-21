@@ -1,0 +1,25 @@
+//43 th Lecture
+//Exercise no 3.
+/*
+Write a program to create a class, Which allows a user ot play te Guess the Number game once.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+/*
+Write a program to create a class, Which allows a user ot play te Guess the Number game once.
+Actions to be followed:
+
+1. Constructor to generate the random number.
+2. Takeuserinput() to take a user input of number.
+3. iscorrectNumber() to detect weather the number entered by the user is true 
+4. getters and setters for noOfGuesses.
+5. Use properties such as noOfGuesses(int), etc to cget this task done: 
+
+ */
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+        
+    }
+}
