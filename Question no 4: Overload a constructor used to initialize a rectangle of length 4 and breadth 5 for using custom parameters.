@@ -1,0 +1,46 @@
+//44 th Lecture
+//Exercise no 3.
+/*
+Java Tutorial : Exercise on Access specifiers and Constructor in java.
+ */
+//Question no 4: Overload a constructor used to initialize a rectangle of length 4 and breadth 5 for using custom parameters.
+//coded BY Abhishek Dadasaheb shelar.
+
+//Imp note: if you want ot get getter and setter then click on code and generate your getter and setter.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Rectangle{
+    private int length;
+    private int breadth;
+
+    public Rectangle() {
+        this.length = 4;
+        this.breadth = 5;
+    }
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getBreadth() {
+        return breadth;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Rectangle s=new Rectangle();
+        System.out.println(s.getLength());
+        System.out.println(s.getBreadth());
+
+
+    }
+}
+
