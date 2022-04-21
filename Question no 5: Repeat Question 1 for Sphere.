@@ -1,0 +1,30 @@
+//44 th Lecture
+//Exercise no 3.
+/*
+Java Tutorial : Exercise on Access specifiers and Constructor in java.
+ */
+//Question no 5: Repeat Question 1 for Sphere.
+//coded BY Abhishek Dadasaheb shelar.
+
+//Imp note: if you want ot get getter and setter then click on code and generate your getter and setter.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Sphere{
+    private int radius;
+
+    public void getRadius(int r) {
+        radius = r;
+        System.out.println(4* radius * Math.PI * radius * radius * radius);
+    }
+
+
+}
+class Main{
+    public static void main(String[] args) {
+        Sphere s=new Sphere();
+        s.getRadius(12);
+    }
+}
