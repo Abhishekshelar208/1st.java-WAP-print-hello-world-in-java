@@ -1,0 +1,54 @@
+//44 th Lecture
+//Exercise no 3.
+/*
+Java Tutorial : Exercise on Access specifiers and Constructor in java.
+ */
+//Question no 2: Use 1st question to calculate surface area and volume of the cylinder in java.
+//coded BY Abhishek Dadasaheb shelar.
+
+
+
+//Imp note: if you want ot get getter and setter then click on code and generate your getter and setter.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Cylinder{
+    private int radius;
+    private int height;
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void surfaceare(){
+        System.out.println( 2* 3.14* radius * radius + 2*3.14*radius*height);
+    }
+}
+
+class Main{
+    public static void main(String[] args) {
+
+        Cylinder s=new Cylinder();
+        s.setHeight(12);
+        System.out.println(s.getHeight());
+        s.setRadius(9);
+        System.out.println(s.getRadius());
+        s.surfaceare();
+    }
+}
+
+
