@@ -1,0 +1,27 @@
+//42 th Lecture
+/*
+//Java Tutorial : Constructor in Java.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+class A{   //This is 1st class.
+    A(int i){     //constructor name is same name as the class Name
+        int id = i;
+        System.out.println("Id is:"+id);
+    }
+}
+class B{  //This is 2nd class.
+    B(String n){      //constructor name is same name as the class Name
+        String name = n;
+        System.out.println("Your name is:"+name);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        A s1=new A(12);   //When object of the class is created then constructor is automatically called.
+        B s2=new B("Abhishek");   //When object of the class is created then constructor is automatically called.
+    }
+}
+
