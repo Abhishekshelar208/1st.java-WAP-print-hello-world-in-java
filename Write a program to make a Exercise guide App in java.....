@@ -1,0 +1,108 @@
+//Write a program to make a Exercise guide App in java.....
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import jdk.swing.interop.SwingInterOpUtils;
+
+import java.io.BufferedReader;
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter 1 for Select BOY");
+        System.out.println("Enter 2 for Select GIRL");
+        int ch=s.nextInt();
+
+        switch (ch){
+            case 1:
+                System.out.println("You select BOY.......");
+                break;
+
+            case 2 :
+                System.out.println("You select GIRL.......");
+                break;
+
+            default:
+                System.out.println("Sorry...Please try again....");
+        }
+        System.out.println("Congratulation you complete your 1st Step 👍");
+        System.out.println();
+
+        System.out.println("Select Workout Type:");
+        System.out.println("1 for UPPER BODY WORKOUT");
+        System.out.println("2 for LOWER BODY WORKOUT");
+        System.out.println("3 for FULL BODY WORKOUT");
+        int ch2=s.nextInt();
+
+        switch (ch2){
+            case 1:
+                System.out.println("You select UPPER BODY WORKOUT");
+                break;
+
+            case 2:
+                System.out.println("You select LOWER BODY WORKOUT");
+                break;
+
+            case 3:
+                System.out.println("You select FULL BODY WORKOUT");
+                break;
+
+            default:
+                System.out.println("Sorry...Please try again....");
+        }
+        System.out.println("Congratulation you complete your 2nd Step 👍");
+        System.out.println();
+
+        System.out.println("Select WORKOUT TYPE:");
+        System.out.println("1 for EASY");
+        System.out.println("2 for MEDIUM");
+        System.out.println("3 for HARD");
+        int ch3=s.nextInt();
+
+        switch (ch3){
+            case 1:
+                System.out.println("You select EASY WORKOUT TYPE");
+                System.out.println("Task you have to perform : ");
+                System.out.println("RUN FOR 5 MINUTES");
+                System.out.println("PUSH UP 10 REPS");
+                System.out.println("PULL UP 10 REPS");
+                System.out.println("CONGRATULATIONS YOU SUCCESSFULLY COMPLETE YOUR WORKOUT");
+                break;
+
+            case 2:
+                System.out.println("You select MEDIUM WORKOUT TYPE");
+                System.out.println("Task you have to perform : ");
+                System.out.println("RUN FOR 10 MINUTES");
+                System.out.println("PUSH UP 20 REPS");
+                System.out.println("PULL UP 20 REPS");
+                System.out.println("CONGRATULATIONS YOU SUCCESSFULLY COMPLETE YOUR WORKOUT");
+                break;
+
+            case 3:
+                System.out.println("You select HARD WORKOUT TYPE");
+                System.out.println("Task you have to perform : ");
+                System.out.println("RUN FOR 15 MINUTES");
+                System.out.println("PUSH UP 30 REPS");
+                System.out.println("PULL UP 30 REPS");
+                System.out.println("CONGRATULATIONS YOU SUCCESSFULLY COMPLETE YOUR WORKOUT");
+                break;
+
+            default:
+                System.out.println("Sorry...Please try again....");
+
+
+
+        }
+        System.out.println("Congratulation you complete your 2nd Step 👍");
+        System.out.println();
+        System.out.println("YOUR WORKOUT COMPLETE FOR TODAY");
+        System.out.println();
+        System.out.println();
+        System.out.println("STAY SAFE || STAY HEALTHY || STAY MOTIVATED ");
+
+    }
+}
+
