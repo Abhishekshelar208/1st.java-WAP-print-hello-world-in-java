@@ -1,0 +1,30 @@
+//Write a program to Age calculator in java
+//coded by Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+        System.out.println("Enter your Date of birth in this format [dd/mm/yy] :");
+        String dateofbirth=s.nextLine();
+        String arr[]=dateofbirth.split("/");
+        int d=Integer.parseInt(arr[0]);
+        int m=Integer.parseInt(arr[1]);
+        int y=Integer.parseInt(arr[2]);
+
+        var d1=LocalDate.of(y,m,d);
+        var d2=LocalDate.now();
+        var p= Period.between(d1,d2);
+
+       System.out.println("Your age is: "+p.getYears()+" Years "+" Your Month is: "+p.getMonths()+" Months "+" your Day is:"+p.getDays()+" Days");
+
+
+    }
+}
