@@ -1,0 +1,78 @@
+//46 th Lecture
+/*
+Java Tutorial : Constructor in Inheritance in java.
+ */
+//coded BY Abhishek Dadasaheb shelar.
+
+package com.company;
+
+class Base{
+    Base(){
+        System.out.println(" I am a constructor");
+    }
+    Base(int a){
+        System.out.println(" I am a constructor with a value of a:"+a);
+    }
+    int x;
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        System.out.println("This function setting value of x");
+        this.x = x;
+    }
+}
+class Derived extends Base{
+    int y;
+    Derived(){
+        super(0);
+        System.out.println("I am derived constructor");
+    }
+    Derived(int a,int b){
+        System.out.println("I am derived constructor with value of a :"+a+" and "+" value of b :"+b);
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        System.out.println("This function setting value of y");
+        this.y = y;
+    }
+}
+class Derived2 extends Derived{
+    int Z;
+    Derived2(){
+        super(3,4);
+        System.out.println("I am derived2 constructor");
+    }
+    Derived2(int a,int b, int c){
+        System.out.println("I am derived constructor with value of a :"+a+" and "+" value of b :"+b+" and value of c is:"+c);
+    }
+
+    public int getZ() {
+        return Z;
+    }
+
+    public void setZ(int z) {
+        System.out.println("This function setting value of z");
+        Z = z;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Derived2 s=new Derived2();
+        s.getX();
+        s.setX(4);
+        s.getY();
+        s.setY(5);
+        s.getZ();
+        s.setZ(6);
+
+    }
+}
+
+
