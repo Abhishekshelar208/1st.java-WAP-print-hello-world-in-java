@@ -1,0 +1,52 @@
+//Write a program to create a number guessing game in java
+/*
+conditions:
+Enter number between 0 to 100
+if number is greater than our number then print = greater than our number
+if number is smaller than our number then print = smaller than our number
+
+if user wants to stop their program then it prints some -value
+if user entered number is matched than our number then prints
+Congratulations you win this game
+and stop the program
+
+
+ */
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+       int ournum=(int)(Math.random()*100);
+       int num;
+        System.out.println("This is a Number Guessing Game");
+
+      while(true){
+          System.out.println("Enter a number:");
+          num=s.nextInt();
+
+          if(num>ournum){
+              System.out.println("Greater than our number");
+          }
+          else {
+              System.out.println("Smaller than our number");
+          }
+          if(num==ournum){
+              System.out.println("Congratulation you win this game ......");
+              System.out.println("Your number "+num+" and our number "+ournum+" is Matched.......");
+              break;
+          }
+          if(num<0){
+              break;
+          }
+      }
+        System.out.println("Game is stop...");
+        System.out.println("Your number is: "+num+ "and our number is: "+ournum);
+    }
+}
