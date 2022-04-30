@@ -1,0 +1,12 @@
+//Write a program to generate a integer random number in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+
+        System.out.println((int)(Math.random()*100));//This is generates 2 digits random number.
+
+    }
+}
