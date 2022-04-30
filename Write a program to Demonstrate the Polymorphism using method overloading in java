@@ -1,0 +1,30 @@
+//Write a program to Demonstrate the Polymorphism using method overloading in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Student{
+    String name;
+    int age;
+ public void printinfo(String name){
+     System.out.println(name);
+ }
+ public void printinfo(int age){
+     System.out.println(age);
+ }
+    public void printinfo(String name, int age){
+        System.out.print(name);
+        System.out.println(age);
+    }
+
+
+
+}
+class Main{
+    public static void main(String[] args) {
+        Student s=new Student();
+        s.printinfo("Abhishek");
+        s.printinfo(19);
+        s.printinfo("Abhishek",19);
+    }
+}
