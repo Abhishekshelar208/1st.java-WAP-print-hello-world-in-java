@@ -1,0 +1,18 @@
+//Write a program to demonstrate the use of exception handling in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Main{
+    public static void main(String[] args) {
+        int makrs[]={22,33,44};
+        try {
+            System.out.println(makrs[6]);
+        } catch (Exception exception){
+
+        }
+        System.out.println("Exception handling is done..");
+        System.out.println("hello world");
+
+    }
+}
