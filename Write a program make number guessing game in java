@@ -1,0 +1,21 @@
+//Write a program make number guessing game in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int fixed=(int)(Math.random()*100);
+        System.out.println("This is a number guessing game :");
+        System.out.println("Enter a number:");
+        int num=s.nextInt();
+        if(num==fixed){
+            System.out.println("Number is Matched");
+        }else{
+            System.out.println("Number is Not Matched because out number is:"+fixed);
+        }
+    }
+}
