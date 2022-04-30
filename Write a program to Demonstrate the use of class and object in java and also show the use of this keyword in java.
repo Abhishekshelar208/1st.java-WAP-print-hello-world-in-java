@@ -1,0 +1,25 @@
+//Write a program to Demonstrate the use of class and object in java and also show the use of this keyword in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Student{
+    String name;
+    int age;
+
+    public void printinfo(String name,int age){
+        this.name = name;  //this keyword is use to particular object
+        this.age = age;    //this keyword is use to particular object
+        System.out.println(name);
+        System.out.println(age);
+    }
+
+}
+class Main{
+    public static void main(String[] args) {
+        Student s=new Student();    //creating object 1
+        s.printinfo("Abhishek",19);
+        Student s1=new Student();  //creating object 2
+        s.printinfo("Vednat",17);
+    }
+}
