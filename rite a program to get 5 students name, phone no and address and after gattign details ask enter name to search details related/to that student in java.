@@ -1,0 +1,39 @@
+//Write a program to get 5 students name, phone no and address and after gattign details ask enter name to search details related
+// to that student in java.
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+      String name[]=new String[5];
+      long ph[]=new long[5];
+      String add[]=new String[5];
+
+        for (int i = 0; i <5 ; i++) {
+            System.out.println("Enter name:");
+            name[i]=s.next();
+
+            System.out.println("Enter Phone no:");
+            ph[i]=s.nextLong();
+
+            System.out.println("Enter address:");
+            add[i]=s.next();
+
+        }
+        System.out.println("Enter name to get details:");
+        String name2=s.next();
+
+        for (int i = 0; i <5 ; i++) {
+            if(name[i].equalsIgnoreCase(name2)){
+                System.out.println("name is:"+name[i]);
+                System.out.println("Phone no is:"+ph[i]);
+                System.out.println("Address is:"+add[i]);
+                break;
+            }
+        }
+    }
+}
+
