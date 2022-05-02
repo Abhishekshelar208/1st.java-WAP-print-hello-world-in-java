@@ -1,0 +1,77 @@
+//Write a program to create a new email id or login existing account in java
+
+package com.company;
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+/*
+        System.out.println("Enter First name:");
+        String fname=s.nextLine();
+        System.out.println("Enter last name:");
+        String lname=s.nextLine();
+        System.out.println("Enter your Email id:");
+        String email=s.nextLine();
+        System.out.println("Enter password:");
+        int password=s.nextInt();
+
+        System.out.println("Confirm password:");
+        int password2=s.nextInt();
+
+        if(password==password2){
+            System.out.println("Login successfully");
+        }
+        else{
+            System.out.println("Something went wrong");
+            System.out.println("Please try again......");
+        }
+
+ */
+        System.out.println("Enter 1 for create account and 2 for login :");
+        int ch=s.nextInt();
+        switch (ch) {
+            case 1:
+                System.out.println("Enter your First name:");
+                String fname = s.next();
+                System.out.println("Enter your last name:");
+                String lname = s.next();
+                System.out.println("To create new email id:");
+                System.out.println("Follow the given steps:");
+                System.out.println("Create your email id for ex:(firstname|lastname|uniquenumber/symbol|@gmail.com)");
+                System.out.println("Enter your email id here:");
+                String email = s.next();
+                System.out.println("Enter your password:");
+                int pas=s.nextInt();
+                System.out.println("Confirm your password:");
+                int pas2=s.nextInt();
+                if(pas==pas2){
+                    System.out.println("Email id Successfully created.....");
+                }else{
+                    System.out.println("Something went Wrong.....");
+                }
+                break;
+            case 2:
+                System.out.println("Enter Email id:");
+                String emai=s.next();
+                System.out.println("Enter password:");
+                int password=s.nextInt();
+                System.out.println("Confirm password:");
+                int password2=s.nextInt();
+
+                if(password==password2){
+                    System.out.println("Login successfully...");
+                }else{
+                    System.out.println("Something went Wrong.....");
+                }
+
+                break;
+            default:
+                System.out.println("Something went Wrong");
+                System.out.println("Please try again.....");
+        }
+
+    }
+}
+
