@@ -1,0 +1,107 @@
+//Write a program to sign in and sign up for email account and also create a password for the user (Manually)
+//or (Automatically)(4,6,8 digits);
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+import java.util.Scanner;
+
+class A{
+    int ch;
+    public void get(){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Press....");
+        System.out.println("1----sign in");
+        System.out.println("2----sign up");
+       int ch=s.nextInt();
+       switch (ch) {
+           case 1:
+               System.out.println("Enter email id:");
+               String email = s.next();
+               System.out.println("Enter password:");
+               String pass = s.next();
+               System.out.println("Confirm password:");
+               String pass2 = s.next();
+               if (pass.equals(pass2)) {
+                   System.out.println("Login Successfully.....");
+                   System.out.println("You can access your account....");
+               }
+               break;
+           case 2:
+               System.out.println("Enter First name:");
+               String fname = s.next();
+               System.out.println("Enter Last name:");
+               String lname = s.next();
+               System.out.println("Create a password:");
+               String password = s.next();
+               System.out.println("Confirm a password:");
+               String password2 = s.next();
+               if (password.equals(password2)) {
+                   System.out.println("Account Created Successfully.....");
+                   System.out.println("You can access your account....");
+               }
+               break;
+           default:
+               System.out.println("Invalid input.....");
+       }
+    }
+}
+class B extends A{
+    public void get2(){
+        int ch2;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Press:");
+        System.out.println("1----Change password(Manually)");
+        System.out.println("2----Change password(Automatically)");
+        ch2=s.nextInt();
+        switch (ch2){
+            case 1:
+                System.out.println("Enter new password:");
+                String newpass=s.next();
+                System.out.println("Confirm new password:");
+                String newpass2=s.next();
+                if(newpass.equals(newpass2)){
+                    System.out.println("Password changed successfully.....");
+                    System.out.println("Your new password is:"+newpass2);
+                }
+                break;
+            case 2:
+                System.out.println("Choose password length:");
+                System.out.println("1----4 digit");
+                System.out.println("2----6 digit");
+                System.out.println("3----8 digit");
+                int ch3=s.nextInt();
+                switch (ch3){
+                    case 1:
+                        System.out.println("Generating a password...........");
+                        System.out.println("Just a Second.......");
+                        System.out.println("Password is Generated Successfully.....");
+                        System.out.println("Password is: "+(int)(Math.random()*10000));
+                        break;
+                    case 2:
+                        System.out.println("Generating a password...........");
+                        System.out.println("Just a Second.......");
+                        System.out.println("Password is Generated Successfully.....");
+                        System.out.println("Password is: "+(int)(Math.random()*1000000));
+                        break;
+                    case 3:
+                        System.out.println("Generating a password...........");
+                        System.out.println("Just a Second.......");
+                        System.out.println("Password is Generated Successfully.....");
+                        System.out.println("Password is: "+(int)(Math.random()*100000000));
+                        break;
+                    default:
+                        System.out.println("Something went Wrong....");
+                        System.out.println("Please try again.....");
+                }
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        B sc=new B();
+        sc.get();
+        sc.get2();
+    }
+}
+
