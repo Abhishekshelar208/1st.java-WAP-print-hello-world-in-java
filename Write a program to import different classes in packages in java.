@@ -1,0 +1,23 @@
+//Write a program to import different classes in packages in java.
+//Coded BY Abhishek Dadasaheb Shelar.
+
+package Bank;
+
+public class Main{
+    public void a(){
+        System.out.println("This is a User Defined package");
+    }
+    public void b(){
+        System.out.println("I Created a User Defined package") ;
+    }
+    public void c(){
+        System.out.println("Java practical no 20.") ;
+    }
+    public static void main(String[] args) {
+        Main s=new Main();
+        s.c();
+        s.b();
+        s.a();
+
+    }
+}
