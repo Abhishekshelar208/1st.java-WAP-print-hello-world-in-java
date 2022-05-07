@@ -1,0 +1,35 @@
+//Write a program to demonstrate the use of Multi-Treading by implementing runnable interface in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class MYrunnable1 implements Runnable{
+    public void run(){
+        int i=0;
+        while (i<100){
+            System.out.println("I am Thread 1");
+            i++;
+        }
+    }
+}
+class MYrunnable2 implements Runnable{
+    public void run(){
+        int i=0;
+        while (i<100){
+            System.out.println("I am Thread 2");
+            i++;
+        }
+    }
+}
+
+class Main{
+    public static void main(String[] args) {
+        MYrunnable1 s=new MYrunnable1();
+        MYrunnable2 s2=new MYrunnable2();
+        Thread t1=new Thread(s);
+        Thread t2=new Thread(s2);
+        t1.start();
+        t2.start();
+    }
+}
+
