@@ -1,0 +1,34 @@
+//Write a program to demonstrate the use of Multi-Treading in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com.company;
+
+class Mythread1 extends Thread{
+    public void run(){
+        int i=0;
+       while (i<20){
+           System.out.println("Thread 1 is Running");
+           i++;
+       }
+    }
+}
+class Mythread2 extends Thread{
+    public void run(){
+        int i=0;
+        while (i<20){
+            System.out.println("Thread 2 is Running");
+            i++;
+        }
+    }
+}
+
+
+class Main{
+    public static void main(String[] args) {
+        Mythread1 t=new Mythread1();
+        Mythread2 t2=new Mythread2();
+        t.start();
+        t2.start();
+    }
+}
+
