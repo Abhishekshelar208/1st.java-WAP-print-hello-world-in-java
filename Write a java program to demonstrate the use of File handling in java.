@@ -1,0 +1,67 @@
+//Write a java program to demonstrate the use of File handling in java.
+//coded BY Abhishek Dadasaheb Shelar
+
+package com.company;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        //code for creating new file in java using file handling
+
+        File myfile=new File("Abhi.txt");
+        try {
+            myfile.createNewFile();} catch (IOException e) {
+            System.out.println("Unable to create this file");
+            throw new RuntimeException(e);
+        }
+
+
+
+
+        //code to write in a file
+        try {
+            FileWriter fileWriter =new FileWriter("Abhi.txt");
+            fileWriter.write("This is my 1st file in java using file handling \n Created by Abhishek D Shelar.");
+            fileWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+
+        //code for reading file
+
+        File myfile=new File("Abhi.txt");
+        try {
+            Scanner s=new Scanner(myfile);
+            while(s.hasNextLine()){
+                String line=s.nextLine();
+                System.out.println(line);
+            }
+            s.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+        //code for delete a file
+
+        File myfile=new File("Abhi.txt");
+        if(myfile.delete()){
+            System.out.println("I have deleted file successfully "+myfile.getName());}
+        else{
+            System.out.println("Something went wrong while Deleting a file");
+        }
+
+
+
+
+    }
+}
