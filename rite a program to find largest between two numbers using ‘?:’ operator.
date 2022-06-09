@@ -1,0 +1,12 @@
+//Write a program to find largest between two numbers using ‘?:’ operator.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Main{
+    public static void main(String[] args) {
+      int a=10,b=17,max;
+      max=( a> b ) ? a : b;
+        System.out.println("The maximum number is:"+max);
+    }
+}
