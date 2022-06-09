@@ -1,0 +1,21 @@
+//Write a program to accept a number as command line arguments and check it is even or odd.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Main{
+    public static void main(String[] args) {
+        System.out.println("Enter a Number:");
+        int num=Integer.parseInt(args[0]);
+        if(num%2==0){
+            System.out.println("Even number");
+        }else{
+            System.out.println("Odd number");
+        }
+    }
+}
+//Before running this program you need to follow the given steps:
+//1: click on Run in menubar.
+//2: Find Edit configuration option and choose it.
+//3: finally give the program arguments in the program arguments box.
+//now run the program .
