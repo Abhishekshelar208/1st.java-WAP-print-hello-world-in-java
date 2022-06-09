@@ -1,0 +1,24 @@
+//Define class Student with suitable data members create two objects using two
+//different constructors of the class.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Student{
+    int id;
+    String name;
+    Student(String n){
+        name=n;
+        System.out.println("Name is:"+name);
+    }
+    Student(int i){
+        id=i;
+        System.out.println("Id is:"+id);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Student s=new Student("Abhishek");
+        Student sc=new Student(12);
+    }
+}
