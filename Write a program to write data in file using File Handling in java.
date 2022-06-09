@@ -1,0 +1,23 @@
+//Write a program to write data in file using File Handling in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+class Main{
+    public static void main(String[] args) {
+       try {
+           FileWriter myfile =new FileWriter("Java.txt");
+           try{
+               myfile.write("Java is an Object Oriented Programming language");
+           }finally {
+               myfile.close();
+           }
+           System.out.println("Data Wrote successfully in File..");
+       }catch (IOException i){
+           System.out.println(i);
+       }
+    }
+}
