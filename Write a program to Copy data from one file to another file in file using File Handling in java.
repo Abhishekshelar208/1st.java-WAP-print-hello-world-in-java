@@ -1,0 +1,20 @@
+//Write a program to Copy data from one file to another file in file using File Handling in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+class Main{
+    public static void main(String[] args) throws IOException {
+        FileInputStream r=new FileInputStream("Java.txt");
+        FileOutputStream w=new FileOutputStream("Python.txt");
+        int i;
+        while ((i=r.read())!=-1){
+            w.write((char) i);
+        }
+        System.out.println("Data copied Successfully...");
+    }
+}
