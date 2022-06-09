@@ -1,0 +1,13 @@
+//Write a program to divide any positive even integer by 2 using bitwise shift operator.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Main{
+    public static void main(String[] args) {
+        System.out.println(96 >> 1 );
+        System.out.println(86 >> 1 );
+        System.out.println(76 >> 1 );
+        System.out.println(66 >> 1 );
+    }
+}
