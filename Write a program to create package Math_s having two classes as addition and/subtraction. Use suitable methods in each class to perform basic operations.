@@ -1,0 +1,26 @@
+//Write a program to create package Math_s having two classes as addition and
+//subtraction. Use suitable methods in each class to perform basic operations.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package Math_s;
+
+class addition{
+    public void add(int a,int b){
+        System.out.println("Addition is: "+(a+b));
+    }
+}
+class subtraction{
+    public void sub(int a,int b){
+        System.out.println("Subtraction is: "+(a-b));
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        addition s=new addition();
+        subtraction sc=new subtraction();
+        s.add(20,10);
+        sc.sub(20,10);
+    }
+}
+
+
