@@ -1,0 +1,26 @@
+//Write a program to Read data in file using File Handling in java.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+class Main{
+    public static void main(String[] args) {
+      try{
+          FileReader myfile=new FileReader("Java.txt");
+          try{
+              int i;
+              while((i=myfile.read())!=-1){
+                  System.out.print((char) i);
+              }
+          }finally {
+              myfile.close();
+          }
+      }catch (IOException i){
+          System.out.println("Exception handled successfully....");
+      }
+
+    }
+}
