@@ -1,0 +1,25 @@
+//write a program to show Dynamic Memory Dispatch in java
+
+package com;
+
+class Super{
+    public void A(){
+        System.out.println("Java");
+    }
+    public void B(){
+        System.out.println("Python in class Super");
+    }
+}
+class Sub extends Super{
+    public void B(){
+        System.out.println("Python in class Sub");
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Super s=new Sub();   //This is Allowed in java and it is called
+        // as Dynamic memory Dispatch
+        s.A();
+        s.B();
+    }
+}
