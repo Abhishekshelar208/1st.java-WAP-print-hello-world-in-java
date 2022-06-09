@@ -1,0 +1,26 @@
+//Write a program to demonstrate the use of vector and its all function in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.util.Vector;
+
+class Main{
+    public static void main(String[] args) {
+        Vector list=new Vector();
+        list.addElement("Abhishek");
+        list.addElement("Vedant");
+        list.addElement("Om");
+        System.out.println("After adding all elements the Vector elements are: "+list);
+        list.insertElementAt("Shelar",1);
+        System.out.println("After inserting Shelar at 1st index the Vector elements are: "+list);
+        System.out.println("The size of list = "+list.size());
+        list.removeElement("Shelar");
+        System.out.println("After removing Shelar from list, the Vector elements are: "+list);
+        list.removeElementAt(2);
+        System.out.println("After removing element which is present at 2nd index , the Vector elements are: "+list);
+        list.removeAllElements();
+        System.out.println("After removing all elements the Vector elements are: "+list);
+
+    }
+}
