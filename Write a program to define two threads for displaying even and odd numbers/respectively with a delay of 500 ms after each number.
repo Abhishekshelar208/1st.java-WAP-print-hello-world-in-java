@@ -1,0 +1,42 @@
+//Write a program to define two threads for displaying even and odd numbers
+//respectively with a delay of 500 ms after each number.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class A extends Thread{
+   public void run(){
+       for (int i = 0; i <10 ; i++) {
+           if(i%2==0){
+               System.out.println("Even no: "+i);
+               try {
+                   A.sleep(500);
+               } catch (InterruptedException e) {
+                   throw new RuntimeException(e);
+               }
+           }
+       }
+   }
+}
+class B extends Thread{
+    public void run(){
+        for (int i = 0; i <10 ; i++) {
+            if(i%2!=0){
+                System.out.println("Odd no: "+i);
+                try {
+                    A.sleep(500);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        A s=new A();
+        B sc=new B();
+        s.start();
+        sc.start();
+    }
+}
