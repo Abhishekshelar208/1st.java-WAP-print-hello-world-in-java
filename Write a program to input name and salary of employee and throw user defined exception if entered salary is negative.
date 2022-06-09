@@ -1,0 +1,31 @@
+
+
+//Write a program to input name and salary of employee and throw user defined exception if entered salary is negative.
+//Coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.io.*;
+
+class A extends Exception{
+    A(String str){
+        super(str);
+    }
+}
+class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter name of employee:");
+        String name=br.readLine();
+        System.out.println("Enter salary of employee:");
+        int salary=Integer.parseInt(br.readLine());
+        try {
+            if(salary<0){
+                System.out.println("Salary is negative:");
+                System.out.println("Salary is:"+salary);
+            }
+        }catch (Exception e){
+            System.out.println("Exception handled succesfully.....");
+        }
+    }
+}
