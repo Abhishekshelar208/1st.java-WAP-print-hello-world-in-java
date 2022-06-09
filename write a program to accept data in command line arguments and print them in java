@@ -1,0 +1,17 @@
+//write a program to accept data in command line arguments and print them in java
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Main{
+    public static void main(String[] args) {
+        System.out.println(args[0]);
+        System.out.println(args[1]);
+        System.out.println(args[2]);
+    }
+}
+//Before running this program you need to follow the given steps:
+//1: click on Run in menubar.
+//2: Find Edit configuration option and choose it.
+//3: finally give the program arguments in the program arguments box.
+//now run the program .
