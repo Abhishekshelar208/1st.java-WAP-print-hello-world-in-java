@@ -1,0 +1,22 @@
+//Write a program to initialize object of a class student using parameterized constructor.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+class Student{
+    int id;
+    String name;
+
+    Student(int i, String n){
+        id=i;
+        name=n;
+
+        System.out.println("Name is:"+name);
+        System.out.println("Id is: "+id);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Student s=new Student(12, "Abhishek");
+    }
+}
