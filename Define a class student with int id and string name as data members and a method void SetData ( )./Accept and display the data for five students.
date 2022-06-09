@@ -1,0 +1,33 @@
+//Define a class student with int id and string name as data members and a method void SetData ( ).
+// Accept and display the data for five students.
+//coded BY Abhishek Dadasaheb Shelar.
+
+package com;
+
+import java.util.Scanner;
+
+class Student{
+    int id;
+    String name;
+
+    public void setData(){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter name:");
+        String name=s.nextLine();
+        System.out.println("Enter id: ");
+        int id=s.nextInt();
+        System.out.println("Id is:"+id);
+        System.out.println("Name is:"+name);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Student sc=new Student();
+        sc.setData();
+        sc.setData();
+        sc.setData();
+        sc.setData();
+        sc.setData();
+
+    }
+}
